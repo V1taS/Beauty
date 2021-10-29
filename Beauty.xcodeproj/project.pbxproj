@@ -22,6 +22,11 @@
 		1BC80061272CB5F8006CBBD5 /* GenericCellSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC80058272CB5F8006CBBD5 /* GenericCellSubview.swift */; };
 		1BC80062272CB5F8006CBBD5 /* ReusableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC80059272CB5F8006CBBD5 /* ReusableComponent.swift */; };
 		1BC80063272CB5F8006CBBD5 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8005A272CB5F8006CBBD5 /* ReusableView.swift */; };
+		1BC80065272CB665006CBBD5 /* ApplicationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC80064272CB665006CBBD5 /* ApplicationServices.swift */; };
+		1BC80069272CB6A0006CBBD5 /* PermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC80068272CB6A0006CBBD5 /* PermissionService.swift */; };
+		1BC8006B272CB6B7006CBBD5 /* PermissionServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8006A272CB6B7006CBBD5 /* PermissionServiceImpl.swift */; };
+		1BC8006D272CB6C4006CBBD5 /* PermissionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8006C272CB6C4006CBBD5 /* PermissionResult.swift */; };
+		1BC80070272CB6DF006CBBD5 /* KeyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8006F272CB6DF006CBBD5 /* KeyboardService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		1BC80058272CB5F8006CBBD5 /* GenericCellSubview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCellSubview.swift; sourceTree = "<group>"; };
 		1BC80059272CB5F8006CBBD5 /* ReusableComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableComponent.swift; sourceTree = "<group>"; };
 		1BC8005A272CB5F8006CBBD5 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		1BC80064272CB665006CBBD5 /* ApplicationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationServices.swift; sourceTree = "<group>"; };
+		1BC80068272CB6A0006CBBD5 /* PermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionService.swift; sourceTree = "<group>"; };
+		1BC8006A272CB6B7006CBBD5 /* PermissionServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionServiceImpl.swift; sourceTree = "<group>"; };
+		1BC8006C272CB6C4006CBBD5 /* PermissionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionResult.swift; sourceTree = "<group>"; };
+		1BC8006F272CB6DF006CBBD5 /* KeyboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,8 @@
 		1BC8004A272CB44E006CBBD5 /* ApplicationServices */ = {
 			isa = PBXGroup;
 			children = (
+				1BC80066272CB67D006CBBD5 /* Services */,
+				1BC80064272CB665006CBBD5 /* ApplicationServices.swift */,
 			);
 			path = ApplicationServices;
 			sourceTree = "<group>";
@@ -156,6 +168,33 @@
 				1BC8005A272CB5F8006CBBD5 /* ReusableView.swift */,
 			);
 			path = CollectionHelpers;
+			sourceTree = "<group>";
+		};
+		1BC80066272CB67D006CBBD5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1BC8006E272CB6D0006CBBD5 /* KeyboardService */,
+				1BC80067272CB688006CBBD5 /* PermissionService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1BC80067272CB688006CBBD5 /* PermissionService */ = {
+			isa = PBXGroup;
+			children = (
+				1BC80068272CB6A0006CBBD5 /* PermissionService.swift */,
+				1BC8006A272CB6B7006CBBD5 /* PermissionServiceImpl.swift */,
+				1BC8006C272CB6C4006CBBD5 /* PermissionResult.swift */,
+			);
+			path = PermissionService;
+			sourceTree = "<group>";
+		};
+		1BC8006E272CB6D0006CBBD5 /* KeyboardService */ = {
+			isa = PBXGroup;
+			children = (
+				1BC8006F272CB6DF006CBBD5 /* KeyboardService.swift */,
+			);
+			path = KeyboardService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,13 +267,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC80070272CB6DF006CBBD5 /* KeyboardService.swift in Sources */,
 				1BC80062272CB5F8006CBBD5 /* ReusableComponent.swift in Sources */,
 				1BC80039272CAE8A006CBBD5 /* ViewController.swift in Sources */,
+				1BC8006B272CB6B7006CBBD5 /* PermissionServiceImpl.swift in Sources */,
 				1BC80061272CB5F8006CBBD5 /* GenericCellSubview.swift in Sources */,
+				1BC8006D272CB6C4006CBBD5 /* PermissionResult.swift in Sources */,
 				1BC8005D272CB5F8006CBBD5 /* ViewHolder.swift in Sources */,
+				1BC80065272CB665006CBBD5 /* ApplicationServices.swift in Sources */,
 				1BC8005C272CB5F8006CBBD5 /* CollectionViewDataSource.swift in Sources */,
 				1BC80035272CAE8A006CBBD5 /* AppDelegate.swift in Sources */,
 				1BC8005E272CB5F8006CBBD5 /* CollectionViewController.swift in Sources */,
+				1BC80069272CB6A0006CBBD5 /* PermissionService.swift in Sources */,
 				1BC80063272CB5F8006CBBD5 /* ReusableView.swift in Sources */,
 				1BC8004F272CB5A1006CBBD5 /* GlobalConstants.swift in Sources */,
 				1BC8005F272CB5F8006CBBD5 /* UICollectionView+Reusable.swift in Sources */,
