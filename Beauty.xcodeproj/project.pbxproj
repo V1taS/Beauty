@@ -7,6 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BB43B3C272EB74A00D86B50 /* DefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B3B272EB74A00D86B50 /* DefaultsWrapper.swift */; };
+		1BB43B3E272EB77100D86B50 /* BoolDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B3D272EB77100D86B50 /* BoolDefaults.swift */; };
+		1BB43B40272EB78A00D86B50 /* AuthorizedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B3F272EB78A00D86B50 /* AuthorizedState.swift */; };
+		1BB43B42272EB7AE00D86B50 /* StringDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B41272EB7AE00D86B50 /* StringDefaults.swift */; };
+		1BB43B48272EB96100D86B50 /* BiometricsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B47272EB96100D86B50 /* BiometricsConstants.swift */; };
+		1BB43B4B272EBA6400D86B50 /* AuthenticationInfoConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B4A272EBA6400D86B50 /* AuthenticationInfoConfigurator.swift */; };
+		1BB43B4D272EBA9000D86B50 /* AuthenticationInfoRouterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B4C272EBA9000D86B50 /* AuthenticationInfoRouterDelegate.swift */; };
+		1BB43B4F272EBAA400D86B50 /* AuthenticationInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B4E272EBAA400D86B50 /* AuthenticationInfoVC.swift */; };
+		1BB43B52272EBBAE00D86B50 /* BiometricAuthErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B51272EBBAE00D86B50 /* BiometricAuthErrors.swift */; };
+		1BB43B54272EBBFB00D86B50 /* BiometricAuthResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B53272EBBFB00D86B50 /* BiometricAuthResult.swift */; };
+		1BB43B56272EBC1700D86B50 /* BiometricAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B55272EBC1700D86B50 /* BiometricAuthService.swift */; };
+		1BB43B58272EBC2A00D86B50 /* BiometricType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B57272EBC2A00D86B50 /* BiometricType.swift */; };
+		1BB43B5A272EBC4100D86B50 /* DefaultBiometricAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B59272EBC4100D86B50 /* DefaultBiometricAuthService.swift */; };
+		1BB43B5D272EBDD100D86B50 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B5C272EBDD100D86B50 /* Keychain.swift */; };
+		1BB43B5F272EBDDD00D86B50 /* KeychainFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B5E272EBDDC00D86B50 /* KeychainFactory.swift */; };
+		1BB43B61272EBE0700D86B50 /* KeychainOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B60272EBE0700D86B50 /* KeychainOptions.swift */; };
+		1BB43B63272EBE3900D86B50 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B62272EBE3900D86B50 /* KeychainService.swift */; };
+		1BB43B65272EBE5000D86B50 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B64272EBE5000D86B50 /* KeychainStorage.swift */; };
+		1BB43B67272EBE6600D86B50 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B66272EBE6600D86B50 /* KeychainWrapper.swift */; };
+		1BB43B69272EBF6400D86B50 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B68272EBF6400D86B50 /* Design.swift */; };
+		1BB43B6B272EBFF200D86B50 /* UIView+SafeAreaLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B6A272EBFF200D86B50 /* UIView+SafeAreaLayout.swift */; };
+		1BB43B6E272EC07A00D86B50 /* StartBiometricsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B6D272EC07A00D86B50 /* StartBiometricsConfigurator.swift */; };
+		1BB43B70272EC0BE00D86B50 /* StartBiometricsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B6F272EC0BE00D86B50 /* StartBiometricsDelegate.swift */; };
+		1BB43B72272EC0D200D86B50 /* StartBiometricsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B71272EC0D200D86B50 /* StartBiometricsVC.swift */; };
+		1BB43B75272EC30F00D86B50 /* UseBiometricsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B74272EC30F00D86B50 /* UseBiometricsConfigurator.swift */; };
+		1BB43B77272EC33400D86B50 /* UseBiometricsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B76272EC33400D86B50 /* UseBiometricsDelegate.swift */; };
+		1BB43B79272EC34400D86B50 /* UseBiometricsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B78272EC34400D86B50 /* UseBiometricsVC.swift */; };
+		1BB43B7C272EC4A100D86B50 /* DefaultPasscodeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B7B272EC4A100D86B50 /* DefaultPasscodeInteractor.swift */; };
+		1BB43B7E272EC4C400D86B50 /* DefaultPasscodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B7D272EC4C400D86B50 /* DefaultPasscodePresenter.swift */; };
+		1BB43B80272EC4EB00D86B50 /* DefaultPasscodeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B7F272EC4EB00D86B50 /* DefaultPasscodeRouter.swift */; };
+		1BB43B82272EC50A00D86B50 /* PasscodeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B81272EC50A00D86B50 /* PasscodeConfigurator.swift */; };
+		1BB43B84272EC52C00D86B50 /* PasscodeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B83272EC52C00D86B50 /* PasscodeProtocols.swift */; };
+		1BB43B86272EC59200D86B50 /* PasscodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B85272EC59200D86B50 /* PasscodeVC.swift */; };
+		1BB43B89272EC6B400D86B50 /* NumberKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B88272EC6B400D86B50 /* NumberKeyboardView.swift */; };
+		1BB43B8C272EC6E200D86B50 /* NumberButtonsGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B8B272EC6E200D86B50 /* NumberButtonsGroupView.swift */; };
+		1BB43B8F272EC70E00D86B50 /* KeyboardButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B8E272EC70E00D86B50 /* KeyboardButtonView.swift */; };
+		1BB43B91272EC72700D86B50 /* TouchableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B90272EC72700D86B50 /* TouchableView.swift */; };
+		1BB43B93272EC7AB00D86B50 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B92272EC7AB00D86B50 /* UIImage+Extensions.swift */; };
+		1BB43B95272EC9EC00D86B50 /* UINavigationController+hideBackButtonTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B94272EC9EC00D86B50 /* UINavigationController+hideBackButtonTitle.swift */; };
+		1BB43B97272ECD3900D86B50 /* PasscodeViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B96272ECD3900D86B50 /* PasscodeViewModels.swift */; };
+		1BB43B9A272ECE0400D86B50 /* PasscodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B99272ECE0400D86B50 /* PasscodeInputView.swift */; };
+		1BB43B9D272ECF6E00D86B50 /* FullScreenPreloaderViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B9C272ECF6E00D86B50 /* FullScreenPreloaderViewPresenter.swift */; };
+		1BB43B9F272ECF8C00D86B50 /* PreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B9E272ECF8C00D86B50 /* PreloaderView.swift */; };
+		1BB43BA2272ED01300D86B50 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BA1272ED01300D86B50 /* LoadingIndicatorView.swift */; };
+		1BB43BA4272ED0F500D86B50 /* UIAlertController+ShowSimpleMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BA3272ED0F500D86B50 /* UIAlertController+ShowSimpleMessage.swift */; };
+		1BB43BA6272ED18A00D86B50 /* String+AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BA5272ED18A00D86B50 /* String+AES.swift */; };
+		1BB43BA8272EEAB800D86B50 /* OnBoardedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BA7272EEAB800D86B50 /* OnBoardedState.swift */; };
+		1BB43BB0272EEE6C00D86B50 /* DefaultOnBoardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BAA272EEE6C00D86B50 /* DefaultOnBoardingRouter.swift */; };
+		1BB43BB1272EEE6C00D86B50 /* DefaultOnBoardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BAB272EEE6C00D86B50 /* DefaultOnBoardingInteractor.swift */; };
+		1BB43BB2272EEE6C00D86B50 /* OnBoardingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BAC272EEE6C00D86B50 /* OnBoardingProtocols.swift */; };
+		1BB43BB3272EEE6C00D86B50 /* OnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BAD272EEE6C00D86B50 /* OnBoardingVC.swift */; };
+		1BB43BB4272EEE6C00D86B50 /* OnBoardingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BAE272EEE6C00D86B50 /* OnBoardingConfigurator.swift */; };
+		1BB43BB5272EEE6C00D86B50 /* DefaultOnBoardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BAF272EEE6C00D86B50 /* DefaultOnBoardingPresenter.swift */; };
+		1BB43BB7272EF25400D86B50 /* OnBoardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BB6272EF25400D86B50 /* OnBoardingCoordinator.swift */; };
+		1BB43BD2272EFFDE00D86B50 /* DefaultLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BCC272EFFDE00D86B50 /* DefaultLoginRouter.swift */; };
+		1BB43BD3272EFFDF00D86B50 /* DefaultLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BCD272EFFDE00D86B50 /* DefaultLoginInteractor.swift */; };
+		1BB43BD4272EFFDF00D86B50 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BCE272EFFDE00D86B50 /* LoginProtocols.swift */; };
+		1BB43BD5272EFFDF00D86B50 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BCF272EFFDE00D86B50 /* LoginVC.swift */; };
+		1BB43BD6272EFFDF00D86B50 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BD0272EFFDE00D86B50 /* LoginConfigurator.swift */; };
+		1BB43BD7272EFFDF00D86B50 /* DefaultLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BD1272EFFDE00D86B50 /* DefaultLoginPresenter.swift */; };
+		1BB43BEB272F029000D86B50 /* DefaultRestorePasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BE5272F029000D86B50 /* DefaultRestorePasswordRouter.swift */; };
+		1BB43BEC272F029000D86B50 /* DefaultRestorePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BE6272F029000D86B50 /* DefaultRestorePasswordInteractor.swift */; };
+		1BB43BED272F029000D86B50 /* RestorePasswordProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BE7272F029000D86B50 /* RestorePasswordProtocols.swift */; };
+		1BB43BEE272F029000D86B50 /* RestorePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BE8272F029000D86B50 /* RestorePasswordVC.swift */; };
+		1BB43BEF272F029000D86B50 /* RestorePasswordConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BE9272F029000D86B50 /* RestorePasswordConfigurator.swift */; };
+		1BB43BF0272F029000D86B50 /* DefaultRestorePasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BEA272F029000D86B50 /* DefaultRestorePasswordPresenter.swift */; };
+		1BB43C04272F28E600D86B50 /* DefaultHomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BFE272F28E600D86B50 /* DefaultHomeScreenRouter.swift */; };
+		1BB43C05272F28E600D86B50 /* DefaultHomeScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BFF272F28E600D86B50 /* DefaultHomeScreenInteractor.swift */; };
+		1BB43C06272F28E600D86B50 /* HomeScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C00272F28E600D86B50 /* HomeScreenProtocols.swift */; };
+		1BB43C07272F28E600D86B50 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C01272F28E600D86B50 /* HomeScreenVC.swift */; };
+		1BB43C08272F28E600D86B50 /* HomeScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C02272F28E600D86B50 /* HomeScreenConfigurator.swift */; };
+		1BB43C09272F28E600D86B50 /* DefaultHomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C03272F28E600D86B50 /* DefaultHomeScreenPresenter.swift */; };
+		1BB43C0B272F293700D86B50 /* HomeScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C0A272F293700D86B50 /* HomeScreenCoordinator.swift */; };
+		1BB43C0D272F30B200D86B50 /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C0C272F30B200D86B50 /* RegistrationCoordinator.swift */; };
+		1BB43C15272F30FF00D86B50 /* DefaultRegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C0F272F30FF00D86B50 /* DefaultRegistrationRouter.swift */; };
+		1BB43C16272F30FF00D86B50 /* DefaultRegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C10272F30FF00D86B50 /* DefaultRegistrationInteractor.swift */; };
+		1BB43C17272F30FF00D86B50 /* RegistrationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C11272F30FF00D86B50 /* RegistrationProtocols.swift */; };
+		1BB43C18272F30FF00D86B50 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C12272F30FF00D86B50 /* RegistrationVC.swift */; };
+		1BB43C19272F30FF00D86B50 /* RegistrationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C13272F30FF00D86B50 /* RegistrationConfigurator.swift */; };
+		1BB43C1A272F30FF00D86B50 /* DefaultRegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C14272F30FF00D86B50 /* DefaultRegistrationPresenter.swift */; };
+		1BB43C21272F35E100D86B50 /* DefaultSMSInputRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C1B272F35E100D86B50 /* DefaultSMSInputRouter.swift */; };
+		1BB43C22272F35E100D86B50 /* DefaultSMSInputInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C1C272F35E100D86B50 /* DefaultSMSInputInteractor.swift */; };
+		1BB43C23272F35E100D86B50 /* SMSInputProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C1D272F35E100D86B50 /* SMSInputProtocols.swift */; };
+		1BB43C24272F35E100D86B50 /* SMSInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C1E272F35E100D86B50 /* SMSInputVC.swift */; };
+		1BB43C25272F35E100D86B50 /* SMSInputConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C1F272F35E100D86B50 /* SMSInputConfigurator.swift */; };
+		1BB43C26272F35E100D86B50 /* DefaultSMSInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C20272F35E100D86B50 /* DefaultSMSInputPresenter.swift */; };
+		1BB43C28272F375000D86B50 /* SMSInputCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C27272F375000D86B50 /* SMSInputCoordinator.swift */; };
 		1BC80035272CAE8A006CBBD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC80034272CAE8A006CBBD5 /* AppDelegate.swift */; };
 		1BC80037272CAE8A006CBBD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC80036272CAE8A006CBBD5 /* SceneDelegate.swift */; };
 		1BC8003E272CAE8F006CBBD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC8003D272CAE8F006CBBD5 /* Assets.xcassets */; };
@@ -42,6 +129,93 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BB43B3B272EB74A00D86B50 /* DefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsWrapper.swift; sourceTree = "<group>"; };
+		1BB43B3D272EB77100D86B50 /* BoolDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolDefaults.swift; sourceTree = "<group>"; };
+		1BB43B3F272EB78A00D86B50 /* AuthorizedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizedState.swift; sourceTree = "<group>"; };
+		1BB43B41272EB7AE00D86B50 /* StringDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDefaults.swift; sourceTree = "<group>"; };
+		1BB43B47272EB96100D86B50 /* BiometricsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricsConstants.swift; sourceTree = "<group>"; };
+		1BB43B4A272EBA6400D86B50 /* AuthenticationInfoConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInfoConfigurator.swift; sourceTree = "<group>"; };
+		1BB43B4C272EBA9000D86B50 /* AuthenticationInfoRouterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInfoRouterDelegate.swift; sourceTree = "<group>"; };
+		1BB43B4E272EBAA400D86B50 /* AuthenticationInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInfoVC.swift; sourceTree = "<group>"; };
+		1BB43B51272EBBAE00D86B50 /* BiometricAuthErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthErrors.swift; sourceTree = "<group>"; };
+		1BB43B53272EBBFB00D86B50 /* BiometricAuthResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthResult.swift; sourceTree = "<group>"; };
+		1BB43B55272EBC1700D86B50 /* BiometricAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthService.swift; sourceTree = "<group>"; };
+		1BB43B57272EBC2A00D86B50 /* BiometricType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricType.swift; sourceTree = "<group>"; };
+		1BB43B59272EBC4100D86B50 /* DefaultBiometricAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBiometricAuthService.swift; sourceTree = "<group>"; };
+		1BB43B5C272EBDD100D86B50 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		1BB43B5E272EBDDC00D86B50 /* KeychainFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainFactory.swift; sourceTree = "<group>"; };
+		1BB43B60272EBE0700D86B50 /* KeychainOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainOptions.swift; sourceTree = "<group>"; };
+		1BB43B62272EBE3900D86B50 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		1BB43B64272EBE5000D86B50 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		1BB43B66272EBE6600D86B50 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		1BB43B68272EBF6400D86B50 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		1BB43B6A272EBFF200D86B50 /* UIView+SafeAreaLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SafeAreaLayout.swift"; sourceTree = "<group>"; };
+		1BB43B6D272EC07A00D86B50 /* StartBiometricsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBiometricsConfigurator.swift; sourceTree = "<group>"; };
+		1BB43B6F272EC0BE00D86B50 /* StartBiometricsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBiometricsDelegate.swift; sourceTree = "<group>"; };
+		1BB43B71272EC0D200D86B50 /* StartBiometricsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartBiometricsVC.swift; sourceTree = "<group>"; };
+		1BB43B74272EC30F00D86B50 /* UseBiometricsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseBiometricsConfigurator.swift; sourceTree = "<group>"; };
+		1BB43B76272EC33400D86B50 /* UseBiometricsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseBiometricsDelegate.swift; sourceTree = "<group>"; };
+		1BB43B78272EC34400D86B50 /* UseBiometricsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseBiometricsVC.swift; sourceTree = "<group>"; };
+		1BB43B7B272EC4A100D86B50 /* DefaultPasscodeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPasscodeInteractor.swift; sourceTree = "<group>"; };
+		1BB43B7D272EC4C400D86B50 /* DefaultPasscodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPasscodePresenter.swift; sourceTree = "<group>"; };
+		1BB43B7F272EC4EB00D86B50 /* DefaultPasscodeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPasscodeRouter.swift; sourceTree = "<group>"; };
+		1BB43B81272EC50A00D86B50 /* PasscodeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeConfigurator.swift; sourceTree = "<group>"; };
+		1BB43B83272EC52C00D86B50 /* PasscodeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeProtocols.swift; sourceTree = "<group>"; };
+		1BB43B85272EC59200D86B50 /* PasscodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeVC.swift; sourceTree = "<group>"; };
+		1BB43B88272EC6B400D86B50 /* NumberKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberKeyboardView.swift; sourceTree = "<group>"; };
+		1BB43B8B272EC6E200D86B50 /* NumberButtonsGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButtonsGroupView.swift; sourceTree = "<group>"; };
+		1BB43B8E272EC70E00D86B50 /* KeyboardButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButtonView.swift; sourceTree = "<group>"; };
+		1BB43B90272EC72700D86B50 /* TouchableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchableView.swift; sourceTree = "<group>"; };
+		1BB43B92272EC7AB00D86B50 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		1BB43B94272EC9EC00D86B50 /* UINavigationController+hideBackButtonTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+hideBackButtonTitle.swift"; sourceTree = "<group>"; };
+		1BB43B96272ECD3900D86B50 /* PasscodeViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeViewModels.swift; sourceTree = "<group>"; };
+		1BB43B99272ECE0400D86B50 /* PasscodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeInputView.swift; sourceTree = "<group>"; };
+		1BB43B9C272ECF6E00D86B50 /* FullScreenPreloaderViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPreloaderViewPresenter.swift; sourceTree = "<group>"; };
+		1BB43B9E272ECF8C00D86B50 /* PreloaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderView.swift; sourceTree = "<group>"; };
+		1BB43BA1272ED01300D86B50 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
+		1BB43BA3272ED0F500D86B50 /* UIAlertController+ShowSimpleMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+ShowSimpleMessage.swift"; sourceTree = "<group>"; };
+		1BB43BA5272ED18A00D86B50 /* String+AES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AES.swift"; sourceTree = "<group>"; };
+		1BB43BA7272EEAB800D86B50 /* OnBoardedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardedState.swift; sourceTree = "<group>"; };
+		1BB43BAA272EEE6C00D86B50 /* DefaultOnBoardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultOnBoardingRouter.swift; sourceTree = "<group>"; };
+		1BB43BAB272EEE6C00D86B50 /* DefaultOnBoardingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultOnBoardingInteractor.swift; sourceTree = "<group>"; };
+		1BB43BAC272EEE6C00D86B50 /* OnBoardingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingProtocols.swift; sourceTree = "<group>"; };
+		1BB43BAD272EEE6C00D86B50 /* OnBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingVC.swift; sourceTree = "<group>"; };
+		1BB43BAE272EEE6C00D86B50 /* OnBoardingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingConfigurator.swift; sourceTree = "<group>"; };
+		1BB43BAF272EEE6C00D86B50 /* DefaultOnBoardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultOnBoardingPresenter.swift; sourceTree = "<group>"; };
+		1BB43BB6272EF25400D86B50 /* OnBoardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCoordinator.swift; sourceTree = "<group>"; };
+		1BB43BCC272EFFDE00D86B50 /* DefaultLoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoginRouter.swift; sourceTree = "<group>"; };
+		1BB43BCD272EFFDE00D86B50 /* DefaultLoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoginInteractor.swift; sourceTree = "<group>"; };
+		1BB43BCE272EFFDE00D86B50 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		1BB43BCF272EFFDE00D86B50 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		1BB43BD0272EFFDE00D86B50 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		1BB43BD1272EFFDE00D86B50 /* DefaultLoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoginPresenter.swift; sourceTree = "<group>"; };
+		1BB43BE5272F029000D86B50 /* DefaultRestorePasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRestorePasswordRouter.swift; sourceTree = "<group>"; };
+		1BB43BE6272F029000D86B50 /* DefaultRestorePasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRestorePasswordInteractor.swift; sourceTree = "<group>"; };
+		1BB43BE7272F029000D86B50 /* RestorePasswordProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordProtocols.swift; sourceTree = "<group>"; };
+		1BB43BE8272F029000D86B50 /* RestorePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordVC.swift; sourceTree = "<group>"; };
+		1BB43BE9272F029000D86B50 /* RestorePasswordConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordConfigurator.swift; sourceTree = "<group>"; };
+		1BB43BEA272F029000D86B50 /* DefaultRestorePasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRestorePasswordPresenter.swift; sourceTree = "<group>"; };
+		1BB43BFE272F28E600D86B50 /* DefaultHomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeScreenRouter.swift; sourceTree = "<group>"; };
+		1BB43BFF272F28E600D86B50 /* DefaultHomeScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeScreenInteractor.swift; sourceTree = "<group>"; };
+		1BB43C00272F28E600D86B50 /* HomeScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenProtocols.swift; sourceTree = "<group>"; };
+		1BB43C01272F28E600D86B50 /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
+		1BB43C02272F28E600D86B50 /* HomeScreenConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenConfigurator.swift; sourceTree = "<group>"; };
+		1BB43C03272F28E600D86B50 /* DefaultHomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeScreenPresenter.swift; sourceTree = "<group>"; };
+		1BB43C0A272F293700D86B50 /* HomeScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCoordinator.swift; sourceTree = "<group>"; };
+		1BB43C0C272F30B200D86B50 /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
+		1BB43C0F272F30FF00D86B50 /* DefaultRegistrationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRegistrationRouter.swift; sourceTree = "<group>"; };
+		1BB43C10272F30FF00D86B50 /* DefaultRegistrationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRegistrationInteractor.swift; sourceTree = "<group>"; };
+		1BB43C11272F30FF00D86B50 /* RegistrationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationProtocols.swift; sourceTree = "<group>"; };
+		1BB43C12272F30FF00D86B50 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
+		1BB43C13272F30FF00D86B50 /* RegistrationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationConfigurator.swift; sourceTree = "<group>"; };
+		1BB43C14272F30FF00D86B50 /* DefaultRegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRegistrationPresenter.swift; sourceTree = "<group>"; };
+		1BB43C1B272F35E100D86B50 /* DefaultSMSInputRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSMSInputRouter.swift; sourceTree = "<group>"; };
+		1BB43C1C272F35E100D86B50 /* DefaultSMSInputInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSMSInputInteractor.swift; sourceTree = "<group>"; };
+		1BB43C1D272F35E100D86B50 /* SMSInputProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSInputProtocols.swift; sourceTree = "<group>"; };
+		1BB43C1E272F35E100D86B50 /* SMSInputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSInputVC.swift; sourceTree = "<group>"; };
+		1BB43C1F272F35E100D86B50 /* SMSInputConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSInputConfigurator.swift; sourceTree = "<group>"; };
+		1BB43C20272F35E100D86B50 /* DefaultSMSInputPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSMSInputPresenter.swift; sourceTree = "<group>"; };
+		1BB43C27272F375000D86B50 /* SMSInputCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSInputCoordinator.swift; sourceTree = "<group>"; };
 		1BC80031272CAE8A006CBBD5 /* Beauty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beauty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC80034272CAE8A006CBBD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BC80036272CAE8A006CBBD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +263,280 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BB43B36272EB5B700D86B50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B68272EBF6400D86B50 /* Design.swift */,
+				1BB43B6A272EBFF200D86B50 /* UIView+SafeAreaLayout.swift */,
+				1BB43B92272EC7AB00D86B50 /* UIImage+Extensions.swift */,
+				1BB43B94272EC9EC00D86B50 /* UINavigationController+hideBackButtonTitle.swift */,
+				1BB43BA3272ED0F500D86B50 /* UIAlertController+ShowSimpleMessage.swift */,
+				1BB43BA5272ED18A00D86B50 /* String+AES.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1BB43B39272EB70D00D86B50 /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B5B272EBDBA00D86B50 /* Keychain */,
+				1BB43B3A272EB72C00D86B50 /* AuthHandler */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		1BB43B3A272EB72C00D86B50 /* AuthHandler */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B3B272EB74A00D86B50 /* DefaultsWrapper.swift */,
+				1BB43B3D272EB77100D86B50 /* BoolDefaults.swift */,
+				1BB43B3F272EB78A00D86B50 /* AuthorizedState.swift */,
+				1BB43BA7272EEAB800D86B50 /* OnBoardedState.swift */,
+				1BB43B41272EB7AE00D86B50 /* StringDefaults.swift */,
+			);
+			path = AuthHandler;
+			sourceTree = "<group>";
+		};
+		1BB43B43272EB8F100D86B50 /* Authorized */ = {
+			isa = PBXGroup;
+			children = (
+				1BC80077272CB7C1006CBBD5 /* Main */,
+			);
+			path = Authorized;
+			sourceTree = "<group>";
+		};
+		1BB43B44272EB8F900D86B50 /* Unauthorized */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43C0E272F30F500D86B50 /* Registration */,
+				1BB43BF1272F27AD00D86B50 /* HomeScreen */,
+				1BB43BD8272F006A00D86B50 /* SMSInput */,
+				1BB43BCB272EFFD400D86B50 /* Login */,
+				1BB43BB8272EFE3D00D86B50 /* RestorePassword */,
+				1BB43BA9272EEE3600D86B50 /* OnBoarding */,
+			);
+			path = Unauthorized;
+			sourceTree = "<group>";
+		};
+		1BB43B45272EB90200D86B50 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B46272EB92400D86B50 /* Authentication */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		1BB43B46272EB92400D86B50 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B47272EB96100D86B50 /* BiometricsConstants.swift */,
+				1BB43B7A272EC49200D86B50 /* Passcode */,
+				1BB43B73272EC30100D86B50 /* UseBiometrics */,
+				1BB43B6C272EC06600D86B50 /* StartBiometrics */,
+				1BB43B49272EBA5200D86B50 /* AuthenticationInfo */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		1BB43B49272EBA5200D86B50 /* AuthenticationInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B4A272EBA6400D86B50 /* AuthenticationInfoConfigurator.swift */,
+				1BB43B4C272EBA9000D86B50 /* AuthenticationInfoRouterDelegate.swift */,
+				1BB43B4E272EBAA400D86B50 /* AuthenticationInfoVC.swift */,
+			);
+			path = AuthenticationInfo;
+			sourceTree = "<group>";
+		};
+		1BB43B50272EBB9900D86B50 /* BiometricAuthService */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B53272EBBFB00D86B50 /* BiometricAuthResult.swift */,
+				1BB43B55272EBC1700D86B50 /* BiometricAuthService.swift */,
+				1BB43B57272EBC2A00D86B50 /* BiometricType.swift */,
+				1BB43B59272EBC4100D86B50 /* DefaultBiometricAuthService.swift */,
+				1BB43B51272EBBAE00D86B50 /* BiometricAuthErrors.swift */,
+			);
+			path = BiometricAuthService;
+			sourceTree = "<group>";
+		};
+		1BB43B5B272EBDBA00D86B50 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B5C272EBDD100D86B50 /* Keychain.swift */,
+				1BB43B5E272EBDDC00D86B50 /* KeychainFactory.swift */,
+				1BB43B60272EBE0700D86B50 /* KeychainOptions.swift */,
+				1BB43B62272EBE3900D86B50 /* KeychainService.swift */,
+				1BB43B64272EBE5000D86B50 /* KeychainStorage.swift */,
+				1BB43B66272EBE6600D86B50 /* KeychainWrapper.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		1BB43B6C272EC06600D86B50 /* StartBiometrics */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B6D272EC07A00D86B50 /* StartBiometricsConfigurator.swift */,
+				1BB43B6F272EC0BE00D86B50 /* StartBiometricsDelegate.swift */,
+				1BB43B71272EC0D200D86B50 /* StartBiometricsVC.swift */,
+			);
+			path = StartBiometrics;
+			sourceTree = "<group>";
+		};
+		1BB43B73272EC30100D86B50 /* UseBiometrics */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B74272EC30F00D86B50 /* UseBiometricsConfigurator.swift */,
+				1BB43B76272EC33400D86B50 /* UseBiometricsDelegate.swift */,
+				1BB43B78272EC34400D86B50 /* UseBiometricsVC.swift */,
+			);
+			path = UseBiometrics;
+			sourceTree = "<group>";
+		};
+		1BB43B7A272EC49200D86B50 /* Passcode */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B7B272EC4A100D86B50 /* DefaultPasscodeInteractor.swift */,
+				1BB43B7D272EC4C400D86B50 /* DefaultPasscodePresenter.swift */,
+				1BB43B7F272EC4EB00D86B50 /* DefaultPasscodeRouter.swift */,
+				1BB43B81272EC50A00D86B50 /* PasscodeConfigurator.swift */,
+				1BB43B83272EC52C00D86B50 /* PasscodeProtocols.swift */,
+				1BB43B85272EC59200D86B50 /* PasscodeVC.swift */,
+				1BB43B96272ECD3900D86B50 /* PasscodeViewModels.swift */,
+			);
+			path = Passcode;
+			sourceTree = "<group>";
+		};
+		1BB43B87272EC6A200D86B50 /* NumberKeyboardView */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B88272EC6B400D86B50 /* NumberKeyboardView.swift */,
+				1BB43B8D272EC6FE00D86B50 /* NumberButtonView */,
+				1BB43B8A272EC6CA00D86B50 /* NumberButtonsGroup */,
+			);
+			path = NumberKeyboardView;
+			sourceTree = "<group>";
+		};
+		1BB43B8A272EC6CA00D86B50 /* NumberButtonsGroup */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B8B272EC6E200D86B50 /* NumberButtonsGroupView.swift */,
+			);
+			path = NumberButtonsGroup;
+			sourceTree = "<group>";
+		};
+		1BB43B8D272EC6FE00D86B50 /* NumberButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B8E272EC70E00D86B50 /* KeyboardButtonView.swift */,
+				1BB43B90272EC72700D86B50 /* TouchableView.swift */,
+			);
+			path = NumberButtonView;
+			sourceTree = "<group>";
+		};
+		1BB43B98272ECDFD00D86B50 /* PasscodeInputView */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B99272ECE0400D86B50 /* PasscodeInputView.swift */,
+			);
+			path = PasscodeInputView;
+			sourceTree = "<group>";
+		};
+		1BB43B9B272ECF6200D86B50 /* PreloaderView */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B9C272ECF6E00D86B50 /* FullScreenPreloaderViewPresenter.swift */,
+				1BB43B9E272ECF8C00D86B50 /* PreloaderView.swift */,
+			);
+			path = PreloaderView;
+			sourceTree = "<group>";
+		};
+		1BB43BA0272ECFF400D86B50 /* LoadingIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43BA1272ED01300D86B50 /* LoadingIndicatorView.swift */,
+			);
+			path = LoadingIndicatorView;
+			sourceTree = "<group>";
+		};
+		1BB43BA9272EEE3600D86B50 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43BAA272EEE6C00D86B50 /* DefaultOnBoardingRouter.swift */,
+				1BB43BAB272EEE6C00D86B50 /* DefaultOnBoardingInteractor.swift */,
+				1BB43BAC272EEE6C00D86B50 /* OnBoardingProtocols.swift */,
+				1BB43BAD272EEE6C00D86B50 /* OnBoardingVC.swift */,
+				1BB43BAE272EEE6C00D86B50 /* OnBoardingConfigurator.swift */,
+				1BB43BAF272EEE6C00D86B50 /* DefaultOnBoardingPresenter.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		1BB43BB8272EFE3D00D86B50 /* RestorePassword */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43BE5272F029000D86B50 /* DefaultRestorePasswordRouter.swift */,
+				1BB43BE6272F029000D86B50 /* DefaultRestorePasswordInteractor.swift */,
+				1BB43BE7272F029000D86B50 /* RestorePasswordProtocols.swift */,
+				1BB43BE8272F029000D86B50 /* RestorePasswordVC.swift */,
+				1BB43BE9272F029000D86B50 /* RestorePasswordConfigurator.swift */,
+				1BB43BEA272F029000D86B50 /* DefaultRestorePasswordPresenter.swift */,
+			);
+			path = RestorePassword;
+			sourceTree = "<group>";
+		};
+		1BB43BCB272EFFD400D86B50 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43BCC272EFFDE00D86B50 /* DefaultLoginRouter.swift */,
+				1BB43BCD272EFFDE00D86B50 /* DefaultLoginInteractor.swift */,
+				1BB43BCE272EFFDE00D86B50 /* LoginProtocols.swift */,
+				1BB43BCF272EFFDE00D86B50 /* LoginVC.swift */,
+				1BB43BD0272EFFDE00D86B50 /* LoginConfigurator.swift */,
+				1BB43BD1272EFFDE00D86B50 /* DefaultLoginPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1BB43BD8272F006A00D86B50 /* SMSInput */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43C1B272F35E100D86B50 /* DefaultSMSInputRouter.swift */,
+				1BB43C1C272F35E100D86B50 /* DefaultSMSInputInteractor.swift */,
+				1BB43C1D272F35E100D86B50 /* SMSInputProtocols.swift */,
+				1BB43C1E272F35E100D86B50 /* SMSInputVC.swift */,
+				1BB43C1F272F35E100D86B50 /* SMSInputConfigurator.swift */,
+				1BB43C20272F35E100D86B50 /* DefaultSMSInputPresenter.swift */,
+			);
+			path = SMSInput;
+			sourceTree = "<group>";
+		};
+		1BB43BF1272F27AD00D86B50 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43BFE272F28E600D86B50 /* DefaultHomeScreenRouter.swift */,
+				1BB43BFF272F28E600D86B50 /* DefaultHomeScreenInteractor.swift */,
+				1BB43C00272F28E600D86B50 /* HomeScreenProtocols.swift */,
+				1BB43C01272F28E600D86B50 /* HomeScreenVC.swift */,
+				1BB43C02272F28E600D86B50 /* HomeScreenConfigurator.swift */,
+				1BB43C03272F28E600D86B50 /* DefaultHomeScreenPresenter.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		1BB43C0E272F30F500D86B50 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43C0F272F30FF00D86B50 /* DefaultRegistrationRouter.swift */,
+				1BB43C10272F30FF00D86B50 /* DefaultRegistrationInteractor.swift */,
+				1BB43C11272F30FF00D86B50 /* RegistrationProtocols.swift */,
+				1BB43C12272F30FF00D86B50 /* RegistrationVC.swift */,
+				1BB43C13272F30FF00D86B50 /* RegistrationConfigurator.swift */,
+				1BB43C14272F30FF00D86B50 /* DefaultRegistrationPresenter.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
 		1BC80028272CAE8A006CBBD5 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +556,7 @@
 		1BC80033272CAE8A006CBBD5 /* Beauty */ = {
 			isa = PBXGroup;
 			children = (
+				1BB43B36272EB5B700D86B50 /* Extensions */,
 				1BC8004D272CB468006CBBD5 /* AssetsAndAppDelegates */,
 				1BC8004C272CB45F006CBBD5 /* UserStories */,
 				1BC8004B272CB456006CBBD5 /* Navigation */,
@@ -121,6 +570,10 @@
 		1BC80048272CB43C006CBBD5 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				1BB43BA0272ECFF400D86B50 /* LoadingIndicatorView */,
+				1BB43B9B272ECF6200D86B50 /* PreloaderView */,
+				1BB43B98272ECDFD00D86B50 /* PasscodeInputView */,
+				1BB43B87272EC6A200D86B50 /* NumberKeyboardView */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -136,8 +589,9 @@
 		1BC8004A272CB44E006CBBD5 /* ApplicationServices */ = {
 			isa = PBXGroup;
 			children = (
-				1BC80066272CB67D006CBBD5 /* Services */,
 				1BC80064272CB665006CBBD5 /* ApplicationServices.swift */,
+				1BB43B39272EB70D00D86B50 /* LocalStorage */,
+				1BC80066272CB67D006CBBD5 /* Services */,
 			);
 			path = ApplicationServices;
 			sourceTree = "<group>";
@@ -145,11 +599,11 @@
 		1BC8004B272CB456006CBBD5 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				1BC80071272CB770006CBBD5 /* Coordinator.swift */,
+				1BC80073272CB781006CBBD5 /* RootApplicationCoordinator.swift */,
 				1BC80089272CBAD1006CBBD5 /* SharedNavigation */,
 				1BC80088272CBAAD006CBBD5 /* UnauthorizedNavigation */,
 				1BC80087272CBAA1006CBBD5 /* AuthorizedNavigation */,
-				1BC80071272CB770006CBBD5 /* Coordinator.swift */,
-				1BC80073272CB781006CBBD5 /* RootApplicationCoordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -157,7 +611,9 @@
 		1BC8004C272CB45F006CBBD5 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
-				1BC80077272CB7C1006CBBD5 /* Main */,
+				1BB43B45272EB90200D86B50 /* Shared */,
+				1BB43B44272EB8F900D86B50 /* Unauthorized */,
+				1BB43B43272EB8F100D86B50 /* Authorized */,
 			);
 			path = UserStories;
 			sourceTree = "<group>";
@@ -202,6 +658,7 @@
 		1BC80066272CB67D006CBBD5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1BB43B50272EBB9900D86B50 /* BiometricAuthService */,
 				1BC8006E272CB6D0006CBBD5 /* KeyboardService */,
 				1BC80067272CB688006CBBD5 /* PermissionService */,
 			);
@@ -277,6 +734,10 @@
 			children = (
 				1BC8008E272CBB2F006CBBD5 /* UnauthorizedCoordinator.swift */,
 				1BC80090272CBB3D006CBBD5 /* LoginCoordinator.swift */,
+				1BB43C0C272F30B200D86B50 /* RegistrationCoordinator.swift */,
+				1BB43C0A272F293700D86B50 /* HomeScreenCoordinator.swift */,
+				1BB43BB6272EF25400D86B50 /* OnBoardingCoordinator.swift */,
+				1BB43C27272F375000D86B50 /* SMSInputCoordinator.swift */,
 			);
 			path = UnauthorizedNavigation;
 			sourceTree = "<group>";
@@ -359,35 +820,122 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB43C17272F30FF00D86B50 /* RegistrationProtocols.swift in Sources */,
+				1BB43B54272EBBFB00D86B50 /* BiometricAuthResult.swift in Sources */,
 				1BC80070272CB6DF006CBBD5 /* KeyboardService.swift in Sources */,
+				1BB43B52272EBBAE00D86B50 /* BiometricAuthErrors.swift in Sources */,
+				1BB43BD4272EFFDF00D86B50 /* LoginProtocols.swift in Sources */,
+				1BB43B4D272EBA9000D86B50 /* AuthenticationInfoRouterDelegate.swift in Sources */,
 				1BC80062272CB5F8006CBBD5 /* ReusableComponent.swift in Sources */,
+				1BB43BB4272EEE6C00D86B50 /* OnBoardingConfigurator.swift in Sources */,
 				1BC80074272CB781006CBBD5 /* RootApplicationCoordinator.swift in Sources */,
+				1BB43BA2272ED01300D86B50 /* LoadingIndicatorView.swift in Sources */,
 				1BC8006B272CB6B7006CBBD5 /* PermissionServiceImpl.swift in Sources */,
 				1BC80085272CB7FE006CBBD5 /* MainConfigurator.swift in Sources */,
 				1BC80081272CB7FE006CBBD5 /* DefaultMainRouter.swift in Sources */,
+				1BB43B8C272EC6E200D86B50 /* NumberButtonsGroupView.swift in Sources */,
+				1BB43B80272EC4EB00D86B50 /* DefaultPasscodeRouter.swift in Sources */,
+				1BB43C21272F35E100D86B50 /* DefaultSMSInputRouter.swift in Sources */,
 				1BC80084272CB7FE006CBBD5 /* MainVC.swift in Sources */,
 				1BC80086272CB7FE006CBBD5 /* DefaultMainPresenter.swift in Sources */,
+				1BB43BD3272EFFDF00D86B50 /* DefaultLoginInteractor.swift in Sources */,
+				1BB43BB2272EEE6C00D86B50 /* OnBoardingProtocols.swift in Sources */,
 				1BC80061272CB5F8006CBBD5 /* GenericCellSubview.swift in Sources */,
+				1BB43B3C272EB74A00D86B50 /* DefaultsWrapper.swift in Sources */,
+				1BB43B7C272EC4A100D86B50 /* DefaultPasscodeInteractor.swift in Sources */,
+				1BB43B91272EC72700D86B50 /* TouchableView.swift in Sources */,
 				1BC8006D272CB6C4006CBBD5 /* PermissionResult.swift in Sources */,
+				1BB43BD6272EFFDF00D86B50 /* LoginConfigurator.swift in Sources */,
+				1BB43B70272EC0BE00D86B50 /* StartBiometricsDelegate.swift in Sources */,
+				1BB43B9F272ECF8C00D86B50 /* PreloaderView.swift in Sources */,
+				1BB43B77272EC33400D86B50 /* UseBiometricsDelegate.swift in Sources */,
+				1BB43B5D272EBDD100D86B50 /* Keychain.swift in Sources */,
 				1BC80083272CB7FE006CBBD5 /* MainProtocols.swift in Sources */,
+				1BB43BD7272EFFDF00D86B50 /* DefaultLoginPresenter.swift in Sources */,
+				1BB43C18272F30FF00D86B50 /* RegistrationVC.swift in Sources */,
 				1BC80072272CB770006CBBD5 /* Coordinator.swift in Sources */,
+				1BB43BA4272ED0F500D86B50 /* UIAlertController+ShowSimpleMessage.swift in Sources */,
+				1BB43B8F272EC70E00D86B50 /* KeyboardButtonView.swift in Sources */,
+				1BB43B79272EC34400D86B50 /* UseBiometricsVC.swift in Sources */,
 				1BC80091272CBB3D006CBBD5 /* LoginCoordinator.swift in Sources */,
+				1BB43BEF272F029000D86B50 /* RestorePasswordConfigurator.swift in Sources */,
+				1BB43C24272F35E100D86B50 /* SMSInputVC.swift in Sources */,
+				1BB43B75272EC30F00D86B50 /* UseBiometricsConfigurator.swift in Sources */,
+				1BB43B48272EB96100D86B50 /* BiometricsConstants.swift in Sources */,
+				1BB43B7E272EC4C400D86B50 /* DefaultPasscodePresenter.swift in Sources */,
 				1BC8005D272CB5F8006CBBD5 /* ViewHolder.swift in Sources */,
 				1BC80065272CB665006CBBD5 /* ApplicationServices.swift in Sources */,
 				1BC80076272CB7A1006CBBD5 /* MainCoordinator.swift in Sources */,
+				1BB43B95272EC9EC00D86B50 /* UINavigationController+hideBackButtonTitle.swift in Sources */,
 				1BC8008B272CBAE5006CBBD5 /* AuthenticationCoordinator.swift in Sources */,
+				1BB43BD2272EFFDE00D86B50 /* DefaultLoginRouter.swift in Sources */,
+				1BB43BED272F029000D86B50 /* RestorePasswordProtocols.swift in Sources */,
+				1BB43C28272F375000D86B50 /* SMSInputCoordinator.swift in Sources */,
 				1BC8008D272CBB0B006CBBD5 /* AuthenticatedCoordinator.swift in Sources */,
+				1BB43BEC272F029000D86B50 /* DefaultRestorePasswordInteractor.swift in Sources */,
+				1BB43B82272EC50A00D86B50 /* PasscodeConfigurator.swift in Sources */,
+				1BB43BB0272EEE6C00D86B50 /* DefaultOnBoardingRouter.swift in Sources */,
+				1BB43C04272F28E600D86B50 /* DefaultHomeScreenRouter.swift in Sources */,
+				1BB43BA6272ED18A00D86B50 /* String+AES.swift in Sources */,
+				1BB43B40272EB78A00D86B50 /* AuthorizedState.swift in Sources */,
+				1BB43B5F272EBDDD00D86B50 /* KeychainFactory.swift in Sources */,
+				1BB43C23272F35E100D86B50 /* SMSInputProtocols.swift in Sources */,
+				1BB43C15272F30FF00D86B50 /* DefaultRegistrationRouter.swift in Sources */,
+				1BB43B61272EBE0700D86B50 /* KeychainOptions.swift in Sources */,
+				1BB43BEB272F029000D86B50 /* DefaultRestorePasswordRouter.swift in Sources */,
+				1BB43BB7272EF25400D86B50 /* OnBoardingCoordinator.swift in Sources */,
+				1BB43C16272F30FF00D86B50 /* DefaultRegistrationInteractor.swift in Sources */,
+				1BB43B93272EC7AB00D86B50 /* UIImage+Extensions.swift in Sources */,
+				1BB43B6B272EBFF200D86B50 /* UIView+SafeAreaLayout.swift in Sources */,
 				1BC8005C272CB5F8006CBBD5 /* CollectionViewDataSource.swift in Sources */,
+				1BB43B69272EBF6400D86B50 /* Design.swift in Sources */,
+				1BB43B6E272EC07A00D86B50 /* StartBiometricsConfigurator.swift in Sources */,
+				1BB43B9D272ECF6E00D86B50 /* FullScreenPreloaderViewPresenter.swift in Sources */,
+				1BB43B67272EBE6600D86B50 /* KeychainWrapper.swift in Sources */,
+				1BB43B63272EBE3900D86B50 /* KeychainService.swift in Sources */,
+				1BB43BA8272EEAB800D86B50 /* OnBoardedState.swift in Sources */,
+				1BB43B3E272EB77100D86B50 /* BoolDefaults.swift in Sources */,
+				1BB43C26272F35E100D86B50 /* DefaultSMSInputPresenter.swift in Sources */,
+				1BB43B42272EB7AE00D86B50 /* StringDefaults.swift in Sources */,
+				1BB43B4B272EBA6400D86B50 /* AuthenticationInfoConfigurator.swift in Sources */,
 				1BC80035272CAE8A006CBBD5 /* AppDelegate.swift in Sources */,
+				1BB43C0B272F293700D86B50 /* HomeScreenCoordinator.swift in Sources */,
+				1BB43C08272F28E600D86B50 /* HomeScreenConfigurator.swift in Sources */,
+				1BB43BD5272EFFDF00D86B50 /* LoginVC.swift in Sources */,
+				1BB43C06272F28E600D86B50 /* HomeScreenProtocols.swift in Sources */,
+				1BB43BEE272F029000D86B50 /* RestorePasswordVC.swift in Sources */,
+				1BB43B84272EC52C00D86B50 /* PasscodeProtocols.swift in Sources */,
 				1BC8005E272CB5F8006CBBD5 /* CollectionViewController.swift in Sources */,
 				1BC8008F272CBB2F006CBBD5 /* UnauthorizedCoordinator.swift in Sources */,
+				1BB43B72272EC0D200D86B50 /* StartBiometricsVC.swift in Sources */,
+				1BB43BB3272EEE6C00D86B50 /* OnBoardingVC.swift in Sources */,
+				1BB43B9A272ECE0400D86B50 /* PasscodeInputView.swift in Sources */,
 				1BC80082272CB7FE006CBBD5 /* DefaultMainInteractor.swift in Sources */,
+				1BB43C22272F35E100D86B50 /* DefaultSMSInputInteractor.swift in Sources */,
 				1BC80069272CB6A0006CBBD5 /* PermissionService.swift in Sources */,
+				1BB43B58272EBC2A00D86B50 /* BiometricType.swift in Sources */,
+				1BB43C09272F28E600D86B50 /* DefaultHomeScreenPresenter.swift in Sources */,
+				1BB43B97272ECD3900D86B50 /* PasscodeViewModels.swift in Sources */,
 				1BC80063272CB5F8006CBBD5 /* ReusableView.swift in Sources */,
+				1BB43C05272F28E600D86B50 /* DefaultHomeScreenInteractor.swift in Sources */,
+				1BB43B86272EC59200D86B50 /* PasscodeVC.swift in Sources */,
 				1BC8004F272CB5A1006CBBD5 /* GlobalConstants.swift in Sources */,
+				1BB43BF0272F029000D86B50 /* DefaultRestorePasswordPresenter.swift in Sources */,
+				1BB43C07272F28E600D86B50 /* HomeScreenVC.swift in Sources */,
+				1BB43B56272EBC1700D86B50 /* BiometricAuthService.swift in Sources */,
 				1BC8005F272CB5F8006CBBD5 /* UICollectionView+Reusable.swift in Sources */,
+				1BB43B4F272EBAA400D86B50 /* AuthenticationInfoVC.swift in Sources */,
+				1BB43B89272EC6B400D86B50 /* NumberKeyboardView.swift in Sources */,
 				1BC80037272CAE8A006CBBD5 /* SceneDelegate.swift in Sources */,
+				1BB43C0D272F30B200D86B50 /* RegistrationCoordinator.swift in Sources */,
+				1BB43BB5272EEE6C00D86B50 /* DefaultOnBoardingPresenter.swift in Sources */,
 				1BC80060272CB5F8006CBBD5 /* GenericCollectionViewCell.swift in Sources */,
+				1BB43C19272F30FF00D86B50 /* RegistrationConfigurator.swift in Sources */,
+				1BB43B65272EBE5000D86B50 /* KeychainStorage.swift in Sources */,
+				1BB43C25272F35E100D86B50 /* SMSInputConfigurator.swift in Sources */,
+				1BB43C1A272F30FF00D86B50 /* DefaultRegistrationPresenter.swift in Sources */,
+				1BB43BB1272EEE6C00D86B50 /* DefaultOnBoardingInteractor.swift in Sources */,
+				1BB43B5A272EBC4100D86B50 /* DefaultBiometricAuthService.swift in Sources */,
 				1BC8005B272CB5F8006CBBD5 /* CollectionViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

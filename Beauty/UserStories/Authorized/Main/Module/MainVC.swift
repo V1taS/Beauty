@@ -19,7 +19,7 @@ final class MainVC: UIViewController {
     }
 
     private func configureSubviews() {
-        view.backgroundColor = .red
+        view.backgroundColor = .white
     }
 }
 

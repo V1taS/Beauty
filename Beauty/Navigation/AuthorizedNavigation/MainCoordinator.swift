@@ -13,6 +13,8 @@ public final class MainCoordinator {
     private let navigationController: UINavigationController
     private let services: ApplicationServices
 
+    var unauthorizedStoryHandler: (() -> Void)?
+
     // MARK: - Initialization
     init(services: ApplicationServices, navigationController: UINavigationController) {
         self.services = services

@@ -10,6 +10,7 @@ import Foundation
 public protocol ApplicationServices {
     var keyboardService: KeyboardService { get }
     var permissionService: PermissionService { get }
+    var biometricService: BiometricAuthService { get }
 }
 
 public final class ApplicationServicesImpl: ApplicationServices {
@@ -21,5 +22,9 @@ public final class ApplicationServicesImpl: ApplicationServices {
 
     public var permissionService: PermissionService {
         PermissionServiceImpl()
+    }
+
+    public var biometricService: BiometricAuthService {
+        DefaultBiometricAuthService()
     }
 }
