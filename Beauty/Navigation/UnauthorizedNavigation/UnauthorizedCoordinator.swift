@@ -54,16 +54,5 @@ final class UnauthorizedCoordinator {
 extension UnauthorizedCoordinator: Coordinator {
     func start() {
         startAppropriateCoordinator()
-//        let loginTabsVC = UITabBarController.bankStyled
-//        let vc = startAppropriateCoordinator()
-//        loginTabsVC.setViewControllers([vc], animated: false)
-//        navigationController.setNavigationBarHidden(true, animated: false)
-//        navigationController.setViewControllers([loginTabsVC], animated: false)
-
-//        let vc = startAppropriateCoordinator()
-//        navigationController.setNavigationBarHidden(true, animated: false)
-//        navigationController.setViewControllers([vc], animated: false)
-
-//        navigationController.viewControllers = [vc]
     }
 }

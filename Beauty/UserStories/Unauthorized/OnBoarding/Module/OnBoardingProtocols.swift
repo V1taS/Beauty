@@ -14,9 +14,11 @@ protocol OnBoardingInteractor {
 }
 
 protocol OnBoardingPresenter {
+    func handle()
 }
 
 protocol OnBoardingView: AnyObject {
+    func updateView(_ model: [OnBoardingModel])
 }
 
 protocol OnBoardingRouter: AnyObject {

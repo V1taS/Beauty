@@ -27,5 +27,6 @@ extension DefaultOnBoardingInteractor: OnBoardingInteractor {
     }
 
     func loadedView() {
+        presenter.handle()
     }
 }

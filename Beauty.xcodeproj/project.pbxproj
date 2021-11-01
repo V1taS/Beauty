@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2AC56A27307DAD0091EB19 /* DimmingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AC56827307DAD0091EB19 /* DimmingImageView.swift */; };
+		1B2AC57027308BF20091EB19 /* OnBoardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AC56F27308BF20091EB19 /* OnBoardingModel.swift */; };
+		1B2AC575273093680091EB19 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AC573273093680091EB19 /* ButtonView.swift */; };
+		1B2AC5772730A5810091EB19 /* UIImageView+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AC5762730A5810091EB19 /* UIImageView+Color.swift */; };
 		1BB43B3C272EB74A00D86B50 /* DefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B3B272EB74A00D86B50 /* DefaultsWrapper.swift */; };
 		1BB43B3E272EB77100D86B50 /* BoolDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B3D272EB77100D86B50 /* BoolDefaults.swift */; };
 		1BB43B40272EB78A00D86B50 /* AuthorizedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B3F272EB78A00D86B50 /* AuthorizedState.swift */; };
@@ -129,6 +133,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B2AC56827307DAD0091EB19 /* DimmingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmingImageView.swift; sourceTree = "<group>"; };
+		1B2AC56F27308BF20091EB19 /* OnBoardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingModel.swift; sourceTree = "<group>"; };
+		1B2AC573273093680091EB19 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		1B2AC5762730A5810091EB19 /* UIImageView+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Color.swift"; sourceTree = "<group>"; };
 		1BB43B3B272EB74A00D86B50 /* DefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsWrapper.swift; sourceTree = "<group>"; };
 		1BB43B3D272EB77100D86B50 /* BoolDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolDefaults.swift; sourceTree = "<group>"; };
 		1BB43B3F272EB78A00D86B50 /* AuthorizedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizedState.swift; sourceTree = "<group>"; };
@@ -263,6 +271,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B2AC56627307D790091EB19 /* DimmingImageView */ = {
+			isa = PBXGroup;
+			children = (
+				1B2AC56827307DAD0091EB19 /* DimmingImageView.swift */,
+			);
+			path = DimmingImageView;
+			sourceTree = "<group>";
+		};
+		1B2AC56D27308BAB0091EB19 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43BAA272EEE6C00D86B50 /* DefaultOnBoardingRouter.swift */,
+				1BB43BAB272EEE6C00D86B50 /* DefaultOnBoardingInteractor.swift */,
+				1BB43BAC272EEE6C00D86B50 /* OnBoardingProtocols.swift */,
+				1BB43BAD272EEE6C00D86B50 /* OnBoardingVC.swift */,
+				1BB43BAE272EEE6C00D86B50 /* OnBoardingConfigurator.swift */,
+				1BB43BAF272EEE6C00D86B50 /* DefaultOnBoardingPresenter.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		1B2AC56E27308BC10091EB19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B2AC56F27308BF20091EB19 /* OnBoardingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B2AC571273093550091EB19 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				1B2AC573273093680091EB19 /* ButtonView.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		1BB43B36272EB5B700D86B50 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +317,7 @@
 				1BB43B94272EC9EC00D86B50 /* UINavigationController+hideBackButtonTitle.swift */,
 				1BB43BA3272ED0F500D86B50 /* UIAlertController+ShowSimpleMessage.swift */,
 				1BB43BA5272ED18A00D86B50 /* String+AES.swift */,
+				1B2AC5762730A5810091EB19 /* UIImageView+Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -462,12 +508,8 @@
 		1BB43BA9272EEE3600D86B50 /* OnBoarding */ = {
 			isa = PBXGroup;
 			children = (
-				1BB43BAA272EEE6C00D86B50 /* DefaultOnBoardingRouter.swift */,
-				1BB43BAB272EEE6C00D86B50 /* DefaultOnBoardingInteractor.swift */,
-				1BB43BAC272EEE6C00D86B50 /* OnBoardingProtocols.swift */,
-				1BB43BAD272EEE6C00D86B50 /* OnBoardingVC.swift */,
-				1BB43BAE272EEE6C00D86B50 /* OnBoardingConfigurator.swift */,
-				1BB43BAF272EEE6C00D86B50 /* DefaultOnBoardingPresenter.swift */,
+				1B2AC56E27308BC10091EB19 /* Models */,
+				1B2AC56D27308BAB0091EB19 /* Module */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -570,6 +612,8 @@
 		1BC80048272CB43C006CBBD5 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				1B2AC571273093550091EB19 /* Button */,
+				1B2AC56627307D790091EB19 /* DimmingImageView */,
 				1BB43BA0272ECFF400D86B50 /* LoadingIndicatorView */,
 				1BB43B9B272ECF6200D86B50 /* PreloaderView */,
 				1BB43B98272ECDFD00D86B50 /* PasscodeInputView */,
@@ -840,6 +884,7 @@
 				1BC80086272CB7FE006CBBD5 /* DefaultMainPresenter.swift in Sources */,
 				1BB43BD3272EFFDF00D86B50 /* DefaultLoginInteractor.swift in Sources */,
 				1BB43BB2272EEE6C00D86B50 /* OnBoardingProtocols.swift in Sources */,
+				1B2AC57027308BF20091EB19 /* OnBoardingModel.swift in Sources */,
 				1BC80061272CB5F8006CBBD5 /* GenericCellSubview.swift in Sources */,
 				1BB43B3C272EB74A00D86B50 /* DefaultsWrapper.swift in Sources */,
 				1BB43B7C272EC4A100D86B50 /* DefaultPasscodeInteractor.swift in Sources */,
@@ -854,6 +899,7 @@
 				1BB43BD7272EFFDF00D86B50 /* DefaultLoginPresenter.swift in Sources */,
 				1BB43C18272F30FF00D86B50 /* RegistrationVC.swift in Sources */,
 				1BC80072272CB770006CBBD5 /* Coordinator.swift in Sources */,
+				1B2AC5772730A5810091EB19 /* UIImageView+Color.swift in Sources */,
 				1BB43BA4272ED0F500D86B50 /* UIAlertController+ShowSimpleMessage.swift in Sources */,
 				1BB43B8F272EC70E00D86B50 /* KeyboardButtonView.swift in Sources */,
 				1BB43B79272EC34400D86B50 /* UseBiometricsVC.swift in Sources */,
@@ -874,6 +920,7 @@
 				1BC8008D272CBB0B006CBBD5 /* AuthenticatedCoordinator.swift in Sources */,
 				1BB43BEC272F029000D86B50 /* DefaultRestorePasswordInteractor.swift in Sources */,
 				1BB43B82272EC50A00D86B50 /* PasscodeConfigurator.swift in Sources */,
+				1B2AC56A27307DAD0091EB19 /* DimmingImageView.swift in Sources */,
 				1BB43BB0272EEE6C00D86B50 /* DefaultOnBoardingRouter.swift in Sources */,
 				1BB43C04272F28E600D86B50 /* DefaultHomeScreenRouter.swift in Sources */,
 				1BB43BA6272ED18A00D86B50 /* String+AES.swift in Sources */,
@@ -901,6 +948,7 @@
 				1BC80035272CAE8A006CBBD5 /* AppDelegate.swift in Sources */,
 				1BB43C0B272F293700D86B50 /* HomeScreenCoordinator.swift in Sources */,
 				1BB43C08272F28E600D86B50 /* HomeScreenConfigurator.swift in Sources */,
+				1B2AC575273093680091EB19 /* ButtonView.swift in Sources */,
 				1BB43BD5272EFFDF00D86B50 /* LoginVC.swift in Sources */,
 				1BB43C06272F28E600D86B50 /* HomeScreenProtocols.swift in Sources */,
 				1BB43BEE272F029000D86B50 /* RestorePasswordVC.swift in Sources */,
