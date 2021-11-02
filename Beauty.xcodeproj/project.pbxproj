@@ -11,6 +11,8 @@
 		1B2AC57027308BF20091EB19 /* OnBoardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AC56F27308BF20091EB19 /* OnBoardingModel.swift */; };
 		1B2AC575273093680091EB19 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AC573273093680091EB19 /* ButtonView.swift */; };
 		1B2AC5772730A5810091EB19 /* UIImageView+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AC5762730A5810091EB19 /* UIImageView+Color.swift */; };
+		1BAF99302731D12000A5DFCB /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAF992F2731D12000A5DFCB /* UIColor+Hex.swift */; };
+		1BAF99322731D5F300A5DFCB /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAF99312731D5F300A5DFCB /* UIView+Shadow.swift */; };
 		1BB43B3C272EB74A00D86B50 /* DefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B3B272EB74A00D86B50 /* DefaultsWrapper.swift */; };
 		1BB43B3E272EB77100D86B50 /* BoolDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B3D272EB77100D86B50 /* BoolDefaults.swift */; };
 		1BB43B40272EB78A00D86B50 /* AuthorizedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B3F272EB78A00D86B50 /* AuthorizedState.swift */; };
@@ -71,12 +73,6 @@
 		1BB43BD5272EFFDF00D86B50 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BCF272EFFDE00D86B50 /* LoginVC.swift */; };
 		1BB43BD6272EFFDF00D86B50 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BD0272EFFDE00D86B50 /* LoginConfigurator.swift */; };
 		1BB43BD7272EFFDF00D86B50 /* DefaultLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BD1272EFFDE00D86B50 /* DefaultLoginPresenter.swift */; };
-		1BB43BEB272F029000D86B50 /* DefaultRestorePasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BE5272F029000D86B50 /* DefaultRestorePasswordRouter.swift */; };
-		1BB43BEC272F029000D86B50 /* DefaultRestorePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BE6272F029000D86B50 /* DefaultRestorePasswordInteractor.swift */; };
-		1BB43BED272F029000D86B50 /* RestorePasswordProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BE7272F029000D86B50 /* RestorePasswordProtocols.swift */; };
-		1BB43BEE272F029000D86B50 /* RestorePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BE8272F029000D86B50 /* RestorePasswordVC.swift */; };
-		1BB43BEF272F029000D86B50 /* RestorePasswordConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BE9272F029000D86B50 /* RestorePasswordConfigurator.swift */; };
-		1BB43BF0272F029000D86B50 /* DefaultRestorePasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BEA272F029000D86B50 /* DefaultRestorePasswordPresenter.swift */; };
 		1BB43C04272F28E600D86B50 /* DefaultHomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BFE272F28E600D86B50 /* DefaultHomeScreenRouter.swift */; };
 		1BB43C05272F28E600D86B50 /* DefaultHomeScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43BFF272F28E600D86B50 /* DefaultHomeScreenInteractor.swift */; };
 		1BB43C06272F28E600D86B50 /* HomeScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43C00272F28E600D86B50 /* HomeScreenProtocols.swift */; };
@@ -137,6 +133,8 @@
 		1B2AC56F27308BF20091EB19 /* OnBoardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingModel.swift; sourceTree = "<group>"; };
 		1B2AC573273093680091EB19 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		1B2AC5762730A5810091EB19 /* UIImageView+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Color.swift"; sourceTree = "<group>"; };
+		1BAF992F2731D12000A5DFCB /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		1BAF99312731D5F300A5DFCB /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		1BB43B3B272EB74A00D86B50 /* DefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsWrapper.swift; sourceTree = "<group>"; };
 		1BB43B3D272EB77100D86B50 /* BoolDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolDefaults.swift; sourceTree = "<group>"; };
 		1BB43B3F272EB78A00D86B50 /* AuthorizedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizedState.swift; sourceTree = "<group>"; };
@@ -197,12 +195,6 @@
 		1BB43BCF272EFFDE00D86B50 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		1BB43BD0272EFFDE00D86B50 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
 		1BB43BD1272EFFDE00D86B50 /* DefaultLoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoginPresenter.swift; sourceTree = "<group>"; };
-		1BB43BE5272F029000D86B50 /* DefaultRestorePasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRestorePasswordRouter.swift; sourceTree = "<group>"; };
-		1BB43BE6272F029000D86B50 /* DefaultRestorePasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRestorePasswordInteractor.swift; sourceTree = "<group>"; };
-		1BB43BE7272F029000D86B50 /* RestorePasswordProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordProtocols.swift; sourceTree = "<group>"; };
-		1BB43BE8272F029000D86B50 /* RestorePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordVC.swift; sourceTree = "<group>"; };
-		1BB43BE9272F029000D86B50 /* RestorePasswordConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordConfigurator.swift; sourceTree = "<group>"; };
-		1BB43BEA272F029000D86B50 /* DefaultRestorePasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRestorePasswordPresenter.swift; sourceTree = "<group>"; };
 		1BB43BFE272F28E600D86B50 /* DefaultHomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeScreenRouter.swift; sourceTree = "<group>"; };
 		1BB43BFF272F28E600D86B50 /* DefaultHomeScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeScreenInteractor.swift; sourceTree = "<group>"; };
 		1BB43C00272F28E600D86B50 /* HomeScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenProtocols.swift; sourceTree = "<group>"; };
@@ -318,6 +310,8 @@
 				1BB43BA3272ED0F500D86B50 /* UIAlertController+ShowSimpleMessage.swift */,
 				1BB43BA5272ED18A00D86B50 /* String+AES.swift */,
 				1B2AC5762730A5810091EB19 /* UIImageView+Color.swift */,
+				1BAF992F2731D12000A5DFCB /* UIColor+Hex.swift */,
+				1BAF99312731D5F300A5DFCB /* UIView+Shadow.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -358,7 +352,6 @@
 				1BB43BF1272F27AD00D86B50 /* HomeScreen */,
 				1BB43BD8272F006A00D86B50 /* SMSInput */,
 				1BB43BCB272EFFD400D86B50 /* Login */,
-				1BB43BB8272EFE3D00D86B50 /* RestorePassword */,
 				1BB43BA9272EEE3600D86B50 /* OnBoarding */,
 			);
 			path = Unauthorized;
@@ -512,19 +505,6 @@
 				1B2AC56D27308BAB0091EB19 /* Module */,
 			);
 			path = OnBoarding;
-			sourceTree = "<group>";
-		};
-		1BB43BB8272EFE3D00D86B50 /* RestorePassword */ = {
-			isa = PBXGroup;
-			children = (
-				1BB43BE5272F029000D86B50 /* DefaultRestorePasswordRouter.swift */,
-				1BB43BE6272F029000D86B50 /* DefaultRestorePasswordInteractor.swift */,
-				1BB43BE7272F029000D86B50 /* RestorePasswordProtocols.swift */,
-				1BB43BE8272F029000D86B50 /* RestorePasswordVC.swift */,
-				1BB43BE9272F029000D86B50 /* RestorePasswordConfigurator.swift */,
-				1BB43BEA272F029000D86B50 /* DefaultRestorePasswordPresenter.swift */,
-			);
-			path = RestorePassword;
 			sourceTree = "<group>";
 		};
 		1BB43BCB272EFFD400D86B50 /* Login */ = {
@@ -904,21 +884,19 @@
 				1BB43B8F272EC70E00D86B50 /* KeyboardButtonView.swift in Sources */,
 				1BB43B79272EC34400D86B50 /* UseBiometricsVC.swift in Sources */,
 				1BC80091272CBB3D006CBBD5 /* LoginCoordinator.swift in Sources */,
-				1BB43BEF272F029000D86B50 /* RestorePasswordConfigurator.swift in Sources */,
 				1BB43C24272F35E100D86B50 /* SMSInputVC.swift in Sources */,
 				1BB43B75272EC30F00D86B50 /* UseBiometricsConfigurator.swift in Sources */,
 				1BB43B48272EB96100D86B50 /* BiometricsConstants.swift in Sources */,
 				1BB43B7E272EC4C400D86B50 /* DefaultPasscodePresenter.swift in Sources */,
+				1BAF99302731D12000A5DFCB /* UIColor+Hex.swift in Sources */,
 				1BC8005D272CB5F8006CBBD5 /* ViewHolder.swift in Sources */,
 				1BC80065272CB665006CBBD5 /* ApplicationServices.swift in Sources */,
 				1BC80076272CB7A1006CBBD5 /* MainCoordinator.swift in Sources */,
 				1BB43B95272EC9EC00D86B50 /* UINavigationController+hideBackButtonTitle.swift in Sources */,
 				1BC8008B272CBAE5006CBBD5 /* AuthenticationCoordinator.swift in Sources */,
 				1BB43BD2272EFFDE00D86B50 /* DefaultLoginRouter.swift in Sources */,
-				1BB43BED272F029000D86B50 /* RestorePasswordProtocols.swift in Sources */,
 				1BB43C28272F375000D86B50 /* SMSInputCoordinator.swift in Sources */,
 				1BC8008D272CBB0B006CBBD5 /* AuthenticatedCoordinator.swift in Sources */,
-				1BB43BEC272F029000D86B50 /* DefaultRestorePasswordInteractor.swift in Sources */,
 				1BB43B82272EC50A00D86B50 /* PasscodeConfigurator.swift in Sources */,
 				1B2AC56A27307DAD0091EB19 /* DimmingImageView.swift in Sources */,
 				1BB43BB0272EEE6C00D86B50 /* DefaultOnBoardingRouter.swift in Sources */,
@@ -929,7 +907,6 @@
 				1BB43C23272F35E100D86B50 /* SMSInputProtocols.swift in Sources */,
 				1BB43C15272F30FF00D86B50 /* DefaultRegistrationRouter.swift in Sources */,
 				1BB43B61272EBE0700D86B50 /* KeychainOptions.swift in Sources */,
-				1BB43BEB272F029000D86B50 /* DefaultRestorePasswordRouter.swift in Sources */,
 				1BB43BB7272EF25400D86B50 /* OnBoardingCoordinator.swift in Sources */,
 				1BB43C16272F30FF00D86B50 /* DefaultRegistrationInteractor.swift in Sources */,
 				1BB43B93272EC7AB00D86B50 /* UIImage+Extensions.swift in Sources */,
@@ -939,6 +916,7 @@
 				1BB43B6E272EC07A00D86B50 /* StartBiometricsConfigurator.swift in Sources */,
 				1BB43B9D272ECF6E00D86B50 /* FullScreenPreloaderViewPresenter.swift in Sources */,
 				1BB43B67272EBE6600D86B50 /* KeychainWrapper.swift in Sources */,
+				1BAF99322731D5F300A5DFCB /* UIView+Shadow.swift in Sources */,
 				1BB43B63272EBE3900D86B50 /* KeychainService.swift in Sources */,
 				1BB43BA8272EEAB800D86B50 /* OnBoardedState.swift in Sources */,
 				1BB43B3E272EB77100D86B50 /* BoolDefaults.swift in Sources */,
@@ -951,7 +929,6 @@
 				1B2AC575273093680091EB19 /* ButtonView.swift in Sources */,
 				1BB43BD5272EFFDF00D86B50 /* LoginVC.swift in Sources */,
 				1BB43C06272F28E600D86B50 /* HomeScreenProtocols.swift in Sources */,
-				1BB43BEE272F029000D86B50 /* RestorePasswordVC.swift in Sources */,
 				1BB43B84272EC52C00D86B50 /* PasscodeProtocols.swift in Sources */,
 				1BC8005E272CB5F8006CBBD5 /* CollectionViewController.swift in Sources */,
 				1BC8008F272CBB2F006CBBD5 /* UnauthorizedCoordinator.swift in Sources */,
@@ -968,7 +945,6 @@
 				1BB43C05272F28E600D86B50 /* DefaultHomeScreenInteractor.swift in Sources */,
 				1BB43B86272EC59200D86B50 /* PasscodeVC.swift in Sources */,
 				1BC8004F272CB5A1006CBBD5 /* GlobalConstants.swift in Sources */,
-				1BB43BF0272F029000D86B50 /* DefaultRestorePasswordPresenter.swift in Sources */,
 				1BB43C07272F28E600D86B50 /* HomeScreenVC.swift in Sources */,
 				1BB43B56272EBC1700D86B50 /* BiometricAuthService.swift in Sources */,
 				1BC8005F272CB5F8006CBBD5 /* UICollectionView+Reusable.swift in Sources */,

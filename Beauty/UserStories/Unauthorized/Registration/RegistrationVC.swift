@@ -10,52 +10,88 @@ import UIKit
 
 final class RegistrationVC: UIViewController {
 
+    // MARK: - Internal variables
     var interactor: RegistrationInteractor?
 
+    // MARK: - Private variables
+    private let stack = UIStackView()
+    private let titleLabel = UILabel()
+    private let nameTextField = UITextField()
+    private let surnameTextField = UITextField()
+    // phoneNumberTextField
+    private let continueButton = ButtonView()
+    private let loginButton = ButtonView()
+
+    private let spacerNameTF = UIView()
+    private let spacerSurnameTF = UIView()
+
+    // MARK: - Initialization
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureSubviews()
+        configureLayout()
+        applyDefaultBehavior()
+    }
+    
+    // MARK: - Private funcs
+    private func configureLayout() {
+        [titleLabel, nameTextField, surnameTextField, continueButton, loginButton].forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            stack.addArrangedSubview($0)
+        }
+
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stack)
+
+        NSLayoutConstraint.activate([
+            nameTextField.heightAnchor.constraint(equalToConstant: 46),
+            surnameTextField.heightAnchor.constraint(equalToConstant: 46),
+            spacerNameTF.widthAnchor.constraint(equalToConstant: 16),
+            spacerSurnameTF.widthAnchor.constraint(equalToConstant: 16),
+
+            stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+            stack.topAnchor.constraint(equalTo: view.topAnchor, constant: 33),
+            stack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25)
+        ])
     }
 
-    private func configureSubviews() {
-        view.backgroundColor = .green
+    private func applyDefaultBehavior() {
+        view.backgroundColor = UIColor.Registration.Background.color
+        stack.axis = .vertical
+        stack.spacing = 17
+        stack.setCustomSpacing(49, after: titleLabel)
+        stack.setCustomSpacing(35, after: surnameTextField)
 
-        let label = UILabel(frame: CGRect(x: UIScreen.main.bounds.width / 2,
-                                          y: 0,
-                                          width: 200,
-                                            height: 200))
-        label.text = "Регистрация"
-        view.addSubview(label)
+        titleLabel.text = String.Registration.Labels.title
+        titleLabel.textColor = UIColor.Registration.Labels.title
+        titleLabel.font = UIFont.Registration.title
+        titleLabel.textAlignment = .center
 
+        nameTextField.placeholder = String.Registration.TextFields.name
+        nameTextField.backgroundColor = UIColor.Registration.TextField.background
+        nameTextField.layer.cornerRadius = 23
+        nameTextField.leftView = spacerNameTF
+        nameTextField.leftViewMode = .always
 
+        surnameTextField.placeholder = String.Registration.TextFields.surname
+        surnameTextField.backgroundColor = UIColor.Registration.TextField.background
+        surnameTextField.layer.cornerRadius = 23
+        surnameTextField.leftView = spacerSurnameTF
+        surnameTextField.leftViewMode = .always
 
-        let button1 = UIButton(frame: CGRect(x: UIScreen.main.bounds.width / 2,
-                                          y: UIScreen.main.bounds.height / 2,
-                                          width: 200,
-                                            height: 200))
-        button1.setTitle("Продолжить", for: .normal)
-        view.addSubview(button1)
+        continueButton.title = String.Registration.Button.continueButton
+        continueButton.colorBg = UIColor.Registration.Button.continueButtonButtonBg
+        continueButton.colorTitle = UIColor.Registration.Button.continueButtonTitle
+        continueButton.action = { [weak self] in
+            self?.interactor?.confirmCode()
+        }
 
-        button1.addTarget(self, action: #selector(testRoute1), for: .touchUpInside)
-
-        let button2 = UIButton(frame: CGRect(x: UIScreen.main.bounds.width / 2,
-                                          y: (UIScreen.main.bounds.height / 2) - 200,
-                                          width: 200,
-                                            height: 200))
-        button2.setTitle("Вход", for: .normal)
-        view.addSubview(button2)
-
-        button2.addTarget(self, action: #selector(testRoute2), for: .touchUpInside)
-    }
-
-    @objc
-    func testRoute1() {
-        interactor?.confirmCode()
-    }
-
-    @objc
-    func testRoute2() {
-        interactor?.login()
+        loginButton.title = String.Registration.Button.loginButton
+        loginButton.colorBg = UIColor.Registration.Button.loginButtonBg
+        loginButton.colorTitle = UIColor.Registration.Button.loginButtonTitle
+        loginButton.borderColor = UIColor.Registration.Button.loginButtonBorder
+        loginButton.action = { [weak self] in
+            self?.interactor?.login()
+        }
     }
 }
 

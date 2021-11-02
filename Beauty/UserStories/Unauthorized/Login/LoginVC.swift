@@ -10,53 +10,80 @@ import UIKit
 
 final class LoginVC: UIViewController {
 
+    // MARK: - Internal variables
     var interactor: LoginInteractor?
+
+    // MARK: - Private variables
+    private let stack = UIStackView()
+    private let titleLabel = UILabel()
+    private let phoneNumberField = UITextField()
+
+    private let continueButton = ButtonView()
+    private let registrationButton = ButtonView()
+
+    private let spacerphoneNumberTF = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureSubviews()
+        configureLayout()
+        applyDefaultBehavior()
+    }
+
+    private func configureLayout() {
+        [titleLabel, phoneNumberField, continueButton, registrationButton].forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            stack.addArrangedSubview($0)
+        }
+
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stack)
+
+        NSLayoutConstraint.activate([
+            phoneNumberField.heightAnchor.constraint(equalToConstant: 46),
+            spacerphoneNumberTF.widthAnchor.constraint(equalToConstant: 16),
+
+            stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+            stack.topAnchor.constraint(equalTo: view.topAnchor, constant: 33),
+            stack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25)
+        ])
+    }
+
+    private func applyDefaultBehavior() {
+        view.backgroundColor = UIColor.Login.Background.color
+
+        stack.axis = .vertical
+        stack.spacing = 17
+        stack.setCustomSpacing(49, after: titleLabel)
+        stack.setCustomSpacing(35, after: phoneNumberField)
+
+        titleLabel.text = String.Login.Labels.title
+        titleLabel.textColor = UIColor.Login.Labels.title
+        titleLabel.font = UIFont.Login.title
+        titleLabel.textAlignment = .center
+
+        phoneNumberField.placeholder = String.Login.TextFields.phone
+        phoneNumberField.backgroundColor = UIColor.Login.TextField.background
+        phoneNumberField.layer.cornerRadius = 23
+        phoneNumberField.leftView = spacerphoneNumberTF
+        phoneNumberField.leftViewMode = .always
+
+        continueButton.title = String.Login.Button.continueButton
+        continueButton.colorBg = UIColor.Login.Button.continueButtonButtonBg
+        continueButton.colorTitle = UIColor.Login.Button.continueButtonTitle
+        continueButton.action = { [weak self] in
+            self?.interactor?.confirmCode()
+        }
+
+        registrationButton.title = String.Login.Button.registrationButton
+        registrationButton.colorBg = UIColor.Login.Button.registrationButtonBg
+        registrationButton.colorTitle = UIColor.Login.Button.registrationButtonTitle
+        registrationButton.borderColor = UIColor.Login.Button.registrationButtonBorder
+        registrationButton.action = { [weak self] in
+            self?.interactor?.registration()
+        }
         interactor?.loadedView()
     }
 
-    private func configureSubviews() {
-        view.backgroundColor = .red
-
-        let label = UILabel(frame: CGRect(x: UIScreen.main.bounds.width / 2,
-                                          y: 0,
-                                          width: 200,
-                                            height: 200))
-        label.text = "Войти"
-        view.addSubview(label)
-
-
-        let button1 = UIButton(frame: CGRect(x: UIScreen.main.bounds.width / 2,
-                                          y: UIScreen.main.bounds.height / 2,
-                                          width: 200,
-                                            height: 200))
-        button1.setTitle("Продолжить", for: .normal)
-        view.addSubview(button1)
-
-        button1.addTarget(self, action: #selector(testRoute1), for: .touchUpInside)
-
-        let button2 = UIButton(frame: CGRect(x: UIScreen.main.bounds.width / 2,
-                                          y: (UIScreen.main.bounds.height / 2) - 200,
-                                          width: 200,
-                                            height: 200))
-        button2.setTitle("Регистрация", for: .normal)
-        view.addSubview(button2)
-
-        button2.addTarget(self, action: #selector(testRoute2), for: .touchUpInside)
-    }
-
-    @objc
-    func testRoute1() {
-        interactor?.confirmCode()
-    }
-
-    @objc
-    func testRoute2() {
-        interactor?.registration()
-    }
 }
 
 extension LoginVC: LoginView {

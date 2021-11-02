@@ -29,6 +29,13 @@ public final class ButtonView: UIView {
         }
     }
 
+    public var borderColor: UIColor? {
+        didSet {
+            button.layer.borderWidth = 1
+            button.layer.borderColor = borderColor?.cgColor
+        }
+    }
+
     public var action: (() -> Void)?
 
     public override var intrinsicContentSize: CGSize {
@@ -70,6 +77,7 @@ public final class ButtonView: UIView {
     private func applyDefaultBehavior() {
         button.layer.cornerRadius = 24
         button.addTarget(self, action: #selector(touchButton), for: .touchUpInside)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .bold)
         apply()
     }
 

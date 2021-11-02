@@ -10,44 +10,101 @@ import UIKit
 
 final class HomeScreenVC: UIViewController {
 
+    // MARK: - Internal variables
     var interactor: HomeScreenInteractor?
 
+    // MARK: - Private variables
+    private let bgImageView = UIImageView()
+    private let stack = UIStackView()
+
+    private let spacerTop = UIView()
+    private let spacerBottom = UIView()
+    private let loginButton = ButtonView()
+    private let registrationButton = ButtonView()
+    private let firstSocialNetworkLabel = UILabel()
+    private let secondSocialNetworkLabel = UILabel()
+
+    // MARK: - Initialization
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureSubviews()
+        configureLayout()
+        applyDefaultBehavior()
+    }
+
+    // MARK: - Private funcs
+    private func configureLayout() {
+        bgImageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bgImageView)
+
+        [spacerTop, loginButton, registrationButton, firstSocialNetworkLabel, secondSocialNetworkLabel, spacerBottom].forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            stack.addArrangedSubview($0)
+        }
+
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stack)
+
+        NSLayoutConstraint.activate([
+            spacerTop.heightAnchor.constraint(equalToConstant: 66),
+            spacerBottom.heightAnchor.constraint(equalToConstant: 40),
+
+            loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+            loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
+
+            registrationButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+            registrationButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
+
+            bgImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            bgImageView.topAnchor.constraint(equalTo: view.topAnchor),
+            bgImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            bgImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+
+            stack.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            stack.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            stack.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+
+        ])
+    }
+
+    private func applyDefaultBehavior() {
+        view.backgroundColor = .white
+        bgImageView.image = UIImage.HomeScreen.Background.image
+        bgImageView.contentMode = .scaleAspectFill
+
+        stack.axis = .vertical
+        stack.alignment = .center
+        stack.setCustomSpacing(20, after: loginButton)
+        stack.setCustomSpacing(56, after: registrationButton)
+        stack.setCustomSpacing(8, after: firstSocialNetworkLabel)
+        stack.backgroundColor = UIColor.HomeScreen.Stack.bg
+        stack.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        stack.clipsToBounds = true
+        stack.layer.cornerRadius = 30
+        stack.applyBigShadow()
+
+        loginButton.colorTitle = UIColor.HomeScreen.Button.loginButtonTitle
+        loginButton.colorBg = UIColor.HomeScreen.Button.loginButtonBg
+        loginButton.title = String.HomeScreen.Button.loginButton
+        loginButton.action = { [weak self] in
+            self?.interactor?.login(username: "", password: "")
+        }
+
+        registrationButton.colorTitle = UIColor.HomeScreen.Button.registrationButtonTitle
+        registrationButton.colorBg = UIColor.HomeScreen.Button.registrationButtonBg
+        registrationButton.title = String.HomeScreen.Button.registrationButton
+        registrationButton.action = { [weak self] in
+            self?.interactor?.registration(username: "", password: "")
+        }
+
+        firstSocialNetworkLabel.text = String.HomeScreen.SocialNetworkLabels.first
+        firstSocialNetworkLabel.textColor = UIColor.HomeScreen.SocialNetworkLabels.first
+        firstSocialNetworkLabel.font = UIFont.HomeScreen.SocialNetworkLabels.first
+
+        secondSocialNetworkLabel.text = String.HomeScreen.SocialNetworkLabels.second
+        secondSocialNetworkLabel.textColor = UIColor.HomeScreen.SocialNetworkLabels.second
+        secondSocialNetworkLabel.font = UIFont.HomeScreen.SocialNetworkLabels.second
+
         interactor?.loadedView()
-    }
-
-    private func configureSubviews() {
-        view.backgroundColor = .black
-
-        let button1 = UIButton(frame: CGRect(x: UIScreen.main.bounds.width / 2,
-                                          y: UIScreen.main.bounds.height / 2,
-                                          width: 200,
-                                            height: 200))
-        button1.setTitle("Войти", for: .normal)
-        view.addSubview(button1)
-
-        button1.addTarget(self, action: #selector(testRoute1), for: .touchUpInside)
-
-        let button2 = UIButton(frame: CGRect(x: UIScreen.main.bounds.width / 2,
-                                          y: (UIScreen.main.bounds.height / 2) - 200,
-                                          width: 200,
-                                            height: 200))
-        button2.setTitle("Регистрация", for: .normal)
-        view.addSubview(button2)
-
-        button2.addTarget(self, action: #selector(testRoute2), for: .touchUpInside)
-    }
-
-    @objc
-    func testRoute1() {
-        interactor?.login(username: "", password: "")
-    }
-
-    @objc
-    func testRoute2() {
-        interactor?.registration(username: "", password: "")
     }
 }
 

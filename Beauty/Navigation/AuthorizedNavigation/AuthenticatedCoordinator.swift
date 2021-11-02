@@ -39,8 +39,6 @@ extension AuthenticatedCoordinator: Coordinator {
         let mainPaymentsNavigation = UINavigationController()
         mainPaymentsNavigation.view.backgroundColor = .white
         mainPaymentsNavigation.tabBarItem = UITabBarItem(title: String.TabBar.second, image: UIImage.TabBar.second, selectedImage: nil)
-        mainPaymentsNavigation.tabBarItem.badgeValue = "3"
-        mainPaymentsNavigation.tabBarItem.badgeColor = UIColor.red
 
         // третий экран
         let mainChatNavigation = UINavigationController()
