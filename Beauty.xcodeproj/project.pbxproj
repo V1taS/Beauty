@@ -40,19 +40,12 @@
 		1BB43B75272EC30F00D86B50 /* UseBiometricsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B74272EC30F00D86B50 /* UseBiometricsConfigurator.swift */; };
 		1BB43B77272EC33400D86B50 /* UseBiometricsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B76272EC33400D86B50 /* UseBiometricsDelegate.swift */; };
 		1BB43B79272EC34400D86B50 /* UseBiometricsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B78272EC34400D86B50 /* UseBiometricsVC.swift */; };
-		1BB43B7C272EC4A100D86B50 /* DefaultPasscodeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B7B272EC4A100D86B50 /* DefaultPasscodeInteractor.swift */; };
-		1BB43B7E272EC4C400D86B50 /* DefaultPasscodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B7D272EC4C400D86B50 /* DefaultPasscodePresenter.swift */; };
-		1BB43B80272EC4EB00D86B50 /* DefaultPasscodeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B7F272EC4EB00D86B50 /* DefaultPasscodeRouter.swift */; };
-		1BB43B82272EC50A00D86B50 /* PasscodeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B81272EC50A00D86B50 /* PasscodeConfigurator.swift */; };
-		1BB43B84272EC52C00D86B50 /* PasscodeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B83272EC52C00D86B50 /* PasscodeProtocols.swift */; };
-		1BB43B86272EC59200D86B50 /* PasscodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B85272EC59200D86B50 /* PasscodeVC.swift */; };
 		1BB43B89272EC6B400D86B50 /* NumberKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B88272EC6B400D86B50 /* NumberKeyboardView.swift */; };
 		1BB43B8C272EC6E200D86B50 /* NumberButtonsGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B8B272EC6E200D86B50 /* NumberButtonsGroupView.swift */; };
 		1BB43B8F272EC70E00D86B50 /* KeyboardButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B8E272EC70E00D86B50 /* KeyboardButtonView.swift */; };
 		1BB43B91272EC72700D86B50 /* TouchableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B90272EC72700D86B50 /* TouchableView.swift */; };
 		1BB43B93272EC7AB00D86B50 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B92272EC7AB00D86B50 /* UIImage+Extensions.swift */; };
 		1BB43B95272EC9EC00D86B50 /* UINavigationController+hideBackButtonTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B94272EC9EC00D86B50 /* UINavigationController+hideBackButtonTitle.swift */; };
-		1BB43B97272ECD3900D86B50 /* PasscodeViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B96272ECD3900D86B50 /* PasscodeViewModels.swift */; };
 		1BB43B9A272ECE0400D86B50 /* PasscodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B99272ECE0400D86B50 /* PasscodeInputView.swift */; };
 		1BB43B9D272ECF6E00D86B50 /* FullScreenPreloaderViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B9C272ECF6E00D86B50 /* FullScreenPreloaderViewPresenter.swift */; };
 		1BB43B9F272ECF8C00D86B50 /* PreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B9E272ECF8C00D86B50 /* PreloaderView.swift */; };
@@ -126,6 +119,11 @@
 		1BC8008D272CBB0B006CBBD5 /* AuthenticatedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8008C272CBB0B006CBBD5 /* AuthenticatedCoordinator.swift */; };
 		1BC8008F272CBB2F006CBBD5 /* UnauthorizedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8008E272CBB2F006CBBD5 /* UnauthorizedCoordinator.swift */; };
 		1BC80091272CBB3D006CBBD5 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC80090272CBB3D006CBBD5 /* LoginCoordinator.swift */; };
+		1BE1D19B2732F2ED00DE6D13 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1992732F2ED00DE6D13 /* InputView.swift */; };
+		1BE1D19D2732F41300DE6D13 /* InputViewBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D19C2732F41300DE6D13 /* InputViewBehavior.swift */; };
+		1BE1D19F2732F45500DE6D13 /* TextInputViewBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D19E2732F45500DE6D13 /* TextInputViewBehavior.swift */; };
+		1BE1D1A12732F64F00DE6D13 /* String+Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1A02732F64F00DE6D13 /* String+Mask.swift */; };
+		1BE1D1A6273300BC00DE6D13 /* PrefixNumberTFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1A4273300BC00DE6D13 /* PrefixNumberTFView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,19 +160,12 @@
 		1BB43B74272EC30F00D86B50 /* UseBiometricsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseBiometricsConfigurator.swift; sourceTree = "<group>"; };
 		1BB43B76272EC33400D86B50 /* UseBiometricsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseBiometricsDelegate.swift; sourceTree = "<group>"; };
 		1BB43B78272EC34400D86B50 /* UseBiometricsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseBiometricsVC.swift; sourceTree = "<group>"; };
-		1BB43B7B272EC4A100D86B50 /* DefaultPasscodeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPasscodeInteractor.swift; sourceTree = "<group>"; };
-		1BB43B7D272EC4C400D86B50 /* DefaultPasscodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPasscodePresenter.swift; sourceTree = "<group>"; };
-		1BB43B7F272EC4EB00D86B50 /* DefaultPasscodeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPasscodeRouter.swift; sourceTree = "<group>"; };
-		1BB43B81272EC50A00D86B50 /* PasscodeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeConfigurator.swift; sourceTree = "<group>"; };
-		1BB43B83272EC52C00D86B50 /* PasscodeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeProtocols.swift; sourceTree = "<group>"; };
-		1BB43B85272EC59200D86B50 /* PasscodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeVC.swift; sourceTree = "<group>"; };
 		1BB43B88272EC6B400D86B50 /* NumberKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberKeyboardView.swift; sourceTree = "<group>"; };
 		1BB43B8B272EC6E200D86B50 /* NumberButtonsGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButtonsGroupView.swift; sourceTree = "<group>"; };
 		1BB43B8E272EC70E00D86B50 /* KeyboardButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButtonView.swift; sourceTree = "<group>"; };
 		1BB43B90272EC72700D86B50 /* TouchableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchableView.swift; sourceTree = "<group>"; };
 		1BB43B92272EC7AB00D86B50 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		1BB43B94272EC9EC00D86B50 /* UINavigationController+hideBackButtonTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+hideBackButtonTitle.swift"; sourceTree = "<group>"; };
-		1BB43B96272ECD3900D86B50 /* PasscodeViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeViewModels.swift; sourceTree = "<group>"; };
 		1BB43B99272ECE0400D86B50 /* PasscodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeInputView.swift; sourceTree = "<group>"; };
 		1BB43B9C272ECF6E00D86B50 /* FullScreenPreloaderViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPreloaderViewPresenter.swift; sourceTree = "<group>"; };
 		1BB43B9E272ECF8C00D86B50 /* PreloaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderView.swift; sourceTree = "<group>"; };
@@ -250,6 +241,11 @@
 		1BC8008C272CBB0B006CBBD5 /* AuthenticatedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedCoordinator.swift; sourceTree = "<group>"; };
 		1BC8008E272CBB2F006CBBD5 /* UnauthorizedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnauthorizedCoordinator.swift; sourceTree = "<group>"; };
 		1BC80090272CBB3D006CBBD5 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		1BE1D1992732F2ED00DE6D13 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		1BE1D19C2732F41300DE6D13 /* InputViewBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewBehavior.swift; sourceTree = "<group>"; };
+		1BE1D19E2732F45500DE6D13 /* TextInputViewBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputViewBehavior.swift; sourceTree = "<group>"; };
+		1BE1D1A02732F64F00DE6D13 /* String+Mask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Mask.swift"; sourceTree = "<group>"; };
+		1BE1D1A4273300BC00DE6D13 /* PrefixNumberTFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixNumberTFView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,12 +288,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		1B2AC571273093550091EB19 /* Button */ = {
+		1B2AC571273093550091EB19 /* ButtonVIEW */ = {
 			isa = PBXGroup;
 			children = (
 				1B2AC573273093680091EB19 /* ButtonView.swift */,
 			);
-			path = Button;
+			path = ButtonVIEW;
 			sourceTree = "<group>";
 		};
 		1BB43B36272EB5B700D86B50 /* Extensions */ = {
@@ -312,6 +308,7 @@
 				1B2AC5762730A5810091EB19 /* UIImageView+Color.swift */,
 				1BAF992F2731D12000A5DFCB /* UIColor+Hex.swift */,
 				1BAF99312731D5F300A5DFCB /* UIView+Shadow.swift */,
+				1BE1D1A02732F64F00DE6D13 /* String+Mask.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -369,7 +366,6 @@
 			isa = PBXGroup;
 			children = (
 				1BB43B47272EB96100D86B50 /* BiometricsConstants.swift */,
-				1BB43B7A272EC49200D86B50 /* Passcode */,
 				1BB43B73272EC30100D86B50 /* UseBiometrics */,
 				1BB43B6C272EC06600D86B50 /* StartBiometrics */,
 				1BB43B49272EBA5200D86B50 /* AuthenticationInfo */,
@@ -430,20 +426,6 @@
 				1BB43B78272EC34400D86B50 /* UseBiometricsVC.swift */,
 			);
 			path = UseBiometrics;
-			sourceTree = "<group>";
-		};
-		1BB43B7A272EC49200D86B50 /* Passcode */ = {
-			isa = PBXGroup;
-			children = (
-				1BB43B7B272EC4A100D86B50 /* DefaultPasscodeInteractor.swift */,
-				1BB43B7D272EC4C400D86B50 /* DefaultPasscodePresenter.swift */,
-				1BB43B7F272EC4EB00D86B50 /* DefaultPasscodeRouter.swift */,
-				1BB43B81272EC50A00D86B50 /* PasscodeConfigurator.swift */,
-				1BB43B83272EC52C00D86B50 /* PasscodeProtocols.swift */,
-				1BB43B85272EC59200D86B50 /* PasscodeVC.swift */,
-				1BB43B96272ECD3900D86B50 /* PasscodeViewModels.swift */,
-			);
-			path = Passcode;
 			sourceTree = "<group>";
 		};
 		1BB43B87272EC6A200D86B50 /* NumberKeyboardView */ = {
@@ -592,7 +574,9 @@
 		1BC80048272CB43C006CBBD5 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				1B2AC571273093550091EB19 /* Button */,
+				1BE1D1A22733007A00DE6D13 /* PrefixNumberTFView */,
+				1BE1D1972732F2C200DE6D13 /* InputView */,
+				1B2AC571273093550091EB19 /* ButtonVIEW */,
 				1B2AC56627307D790091EB19 /* DimmingImageView */,
 				1BB43BA0272ECFF400D86B50 /* LoadingIndicatorView */,
 				1BB43B9B272ECF6200D86B50 /* PreloaderView */,
@@ -774,6 +758,24 @@
 			path = SharedNavigation;
 			sourceTree = "<group>";
 		};
+		1BE1D1972732F2C200DE6D13 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				1BE1D1992732F2ED00DE6D13 /* InputView.swift */,
+				1BE1D19C2732F41300DE6D13 /* InputViewBehavior.swift */,
+				1BE1D19E2732F45500DE6D13 /* TextInputViewBehavior.swift */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
+		1BE1D1A22733007A00DE6D13 /* PrefixNumberTFView */ = {
+			isa = PBXGroup;
+			children = (
+				1BE1D1A4273300BC00DE6D13 /* PrefixNumberTFView.swift */,
+			);
+			path = PrefixNumberTFView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -852,13 +854,13 @@
 				1BB43B4D272EBA9000D86B50 /* AuthenticationInfoRouterDelegate.swift in Sources */,
 				1BC80062272CB5F8006CBBD5 /* ReusableComponent.swift in Sources */,
 				1BB43BB4272EEE6C00D86B50 /* OnBoardingConfigurator.swift in Sources */,
+				1BE1D19B2732F2ED00DE6D13 /* InputView.swift in Sources */,
 				1BC80074272CB781006CBBD5 /* RootApplicationCoordinator.swift in Sources */,
 				1BB43BA2272ED01300D86B50 /* LoadingIndicatorView.swift in Sources */,
 				1BC8006B272CB6B7006CBBD5 /* PermissionServiceImpl.swift in Sources */,
 				1BC80085272CB7FE006CBBD5 /* MainConfigurator.swift in Sources */,
 				1BC80081272CB7FE006CBBD5 /* DefaultMainRouter.swift in Sources */,
 				1BB43B8C272EC6E200D86B50 /* NumberButtonsGroupView.swift in Sources */,
-				1BB43B80272EC4EB00D86B50 /* DefaultPasscodeRouter.swift in Sources */,
 				1BB43C21272F35E100D86B50 /* DefaultSMSInputRouter.swift in Sources */,
 				1BC80084272CB7FE006CBBD5 /* MainVC.swift in Sources */,
 				1BC80086272CB7FE006CBBD5 /* DefaultMainPresenter.swift in Sources */,
@@ -867,7 +869,6 @@
 				1B2AC57027308BF20091EB19 /* OnBoardingModel.swift in Sources */,
 				1BC80061272CB5F8006CBBD5 /* GenericCellSubview.swift in Sources */,
 				1BB43B3C272EB74A00D86B50 /* DefaultsWrapper.swift in Sources */,
-				1BB43B7C272EC4A100D86B50 /* DefaultPasscodeInteractor.swift in Sources */,
 				1BB43B91272EC72700D86B50 /* TouchableView.swift in Sources */,
 				1BC8006D272CB6C4006CBBD5 /* PermissionResult.swift in Sources */,
 				1BB43BD6272EFFDF00D86B50 /* LoginConfigurator.swift in Sources */,
@@ -887,7 +888,6 @@
 				1BB43C24272F35E100D86B50 /* SMSInputVC.swift in Sources */,
 				1BB43B75272EC30F00D86B50 /* UseBiometricsConfigurator.swift in Sources */,
 				1BB43B48272EB96100D86B50 /* BiometricsConstants.swift in Sources */,
-				1BB43B7E272EC4C400D86B50 /* DefaultPasscodePresenter.swift in Sources */,
 				1BAF99302731D12000A5DFCB /* UIColor+Hex.swift in Sources */,
 				1BC8005D272CB5F8006CBBD5 /* ViewHolder.swift in Sources */,
 				1BC80065272CB665006CBBD5 /* ApplicationServices.swift in Sources */,
@@ -897,7 +897,6 @@
 				1BB43BD2272EFFDE00D86B50 /* DefaultLoginRouter.swift in Sources */,
 				1BB43C28272F375000D86B50 /* SMSInputCoordinator.swift in Sources */,
 				1BC8008D272CBB0B006CBBD5 /* AuthenticatedCoordinator.swift in Sources */,
-				1BB43B82272EC50A00D86B50 /* PasscodeConfigurator.swift in Sources */,
 				1B2AC56A27307DAD0091EB19 /* DimmingImageView.swift in Sources */,
 				1BB43BB0272EEE6C00D86B50 /* DefaultOnBoardingRouter.swift in Sources */,
 				1BB43C04272F28E600D86B50 /* DefaultHomeScreenRouter.swift in Sources */,
@@ -921,7 +920,9 @@
 				1BB43BA8272EEAB800D86B50 /* OnBoardedState.swift in Sources */,
 				1BB43B3E272EB77100D86B50 /* BoolDefaults.swift in Sources */,
 				1BB43C26272F35E100D86B50 /* DefaultSMSInputPresenter.swift in Sources */,
+				1BE1D19F2732F45500DE6D13 /* TextInputViewBehavior.swift in Sources */,
 				1BB43B42272EB7AE00D86B50 /* StringDefaults.swift in Sources */,
+				1BE1D1A6273300BC00DE6D13 /* PrefixNumberTFView.swift in Sources */,
 				1BB43B4B272EBA6400D86B50 /* AuthenticationInfoConfigurator.swift in Sources */,
 				1BC80035272CAE8A006CBBD5 /* AppDelegate.swift in Sources */,
 				1BB43C0B272F293700D86B50 /* HomeScreenCoordinator.swift in Sources */,
@@ -929,7 +930,6 @@
 				1B2AC575273093680091EB19 /* ButtonView.swift in Sources */,
 				1BB43BD5272EFFDF00D86B50 /* LoginVC.swift in Sources */,
 				1BB43C06272F28E600D86B50 /* HomeScreenProtocols.swift in Sources */,
-				1BB43B84272EC52C00D86B50 /* PasscodeProtocols.swift in Sources */,
 				1BC8005E272CB5F8006CBBD5 /* CollectionViewController.swift in Sources */,
 				1BC8008F272CBB2F006CBBD5 /* UnauthorizedCoordinator.swift in Sources */,
 				1BB43B72272EC0D200D86B50 /* StartBiometricsVC.swift in Sources */,
@@ -940,10 +940,8 @@
 				1BC80069272CB6A0006CBBD5 /* PermissionService.swift in Sources */,
 				1BB43B58272EBC2A00D86B50 /* BiometricType.swift in Sources */,
 				1BB43C09272F28E600D86B50 /* DefaultHomeScreenPresenter.swift in Sources */,
-				1BB43B97272ECD3900D86B50 /* PasscodeViewModels.swift in Sources */,
 				1BC80063272CB5F8006CBBD5 /* ReusableView.swift in Sources */,
 				1BB43C05272F28E600D86B50 /* DefaultHomeScreenInteractor.swift in Sources */,
-				1BB43B86272EC59200D86B50 /* PasscodeVC.swift in Sources */,
 				1BC8004F272CB5A1006CBBD5 /* GlobalConstants.swift in Sources */,
 				1BB43C07272F28E600D86B50 /* HomeScreenVC.swift in Sources */,
 				1BB43B56272EBC1700D86B50 /* BiometricAuthService.swift in Sources */,
@@ -957,6 +955,8 @@
 				1BB43C19272F30FF00D86B50 /* RegistrationConfigurator.swift in Sources */,
 				1BB43B65272EBE5000D86B50 /* KeychainStorage.swift in Sources */,
 				1BB43C25272F35E100D86B50 /* SMSInputConfigurator.swift in Sources */,
+				1BE1D1A12732F64F00DE6D13 /* String+Mask.swift in Sources */,
+				1BE1D19D2732F41300DE6D13 /* InputViewBehavior.swift in Sources */,
 				1BB43C1A272F30FF00D86B50 /* DefaultRegistrationPresenter.swift in Sources */,
 				1BB43BB1272EEE6C00D86B50 /* DefaultOnBoardingInteractor.swift in Sources */,
 				1BB43B5A272EBC4100D86B50 /* DefaultBiometricAuthService.swift in Sources */,

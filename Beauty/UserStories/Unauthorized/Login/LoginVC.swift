@@ -16,12 +16,12 @@ final class LoginVC: UIViewController {
     // MARK: - Private variables
     private let stack = UIStackView()
     private let titleLabel = UILabel()
-    private let phoneNumberField = UITextField()
+    private let phoneNumberField = InputView()
 
     private let continueButton = ButtonView()
     private let registrationButton = ButtonView()
 
-    private let spacerphoneNumberTF = UIView()
+    private let prefixNumberTFView = PrefixNumberTFView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,6 @@ final class LoginVC: UIViewController {
 
         NSLayoutConstraint.activate([
             phoneNumberField.heightAnchor.constraint(equalToConstant: 46),
-            spacerphoneNumberTF.widthAnchor.constraint(equalToConstant: 16),
 
             stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
             stack.topAnchor.constraint(equalTo: view.topAnchor, constant: 33),
@@ -64,8 +63,8 @@ final class LoginVC: UIViewController {
         phoneNumberField.placeholder = String.Login.TextFields.phone
         phoneNumberField.backgroundColor = UIColor.Login.TextField.background
         phoneNumberField.layer.cornerRadius = 23
-        phoneNumberField.leftView = spacerphoneNumberTF
-        phoneNumberField.leftViewMode = .always
+        phoneNumberField.leftView = prefixNumberTFView
+        phoneNumberField.behavior = InputView.PhoneBehavoiur(mask: "(###) ###-##-##")
 
         continueButton.title = String.Login.Button.continueButton
         continueButton.colorBg = UIColor.Login.Button.continueButtonButtonBg

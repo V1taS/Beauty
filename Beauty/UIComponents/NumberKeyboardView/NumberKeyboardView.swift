@@ -36,7 +36,7 @@ public final class NumberKeyboardView: UIView {
     private let fourthPasscodeGroup = NumberButtonsGroupView()
 
     // FIXME: - добавить иконку
-    private lazy var fourthTitles: [KeybordButtonsTitles] = [DefaultKeyboardButtonsTitle(text: "biometry", image: leftButtonImage), "0", DefaultKeyboardButtonsTitle(text: "erase", image: UIImage.add.tinted(with: UIColor.black))]
+    private lazy var fourthTitles: [KeybordButtonsTitles] = [DefaultKeyboardButtonsTitle(text: "biometry", image: leftButtonImage), "0", DefaultKeyboardButtonsTitle(text: "erase", image: UIImage(named: "clear")!.tinted(with: UIColor.black))]
 
     // MARK: - Public funcs
     override init(frame: CGRect) {

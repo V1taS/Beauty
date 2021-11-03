@@ -14,6 +14,7 @@ final class AuthenticationCoordinator {
     private let applicationServices: ApplicationServices
     private let navigationController: UINavigationController
     private let authorized: Bool
+    private var mainCoordinator: Coordinator?
 
     @AuthorizedState
     private var authorizedState: Bool
@@ -51,38 +52,34 @@ extension AuthenticationCoordinator: Coordinator {
 
     func start() {
         if authorized {
-            let vc = PasscodeConfigurator.createModuleEnterPwdState(with: applicationServices, delegate: self)
-            navigationController.viewControllers = [vc]
+            let tabVC: UITabBarController = .bankStyled
+
+            // первый экран
+            let mainNavigation = UINavigationController()
+            let mainCoordinator = MainCoordinator(services: applicationServices, navigationController: mainNavigation)
+            mainCoordinator.unauthorizedStoryHandler = unauthorizedStoryHandler
+            self.mainCoordinator = mainCoordinator
+            self.mainCoordinator?.start()
+            mainNavigation.tabBarItem = UITabBarItem(title: String.TabBar.first, image: UIImage.TabBar.first, selectedImage: nil)
+
+            // второй экран
+            let mainPaymentsNavigation = UINavigationController()
+            mainPaymentsNavigation.view.backgroundColor = .white
+            mainPaymentsNavigation.tabBarItem = UITabBarItem(title: String.TabBar.second, image: UIImage.TabBar.second, selectedImage: nil)
+
+            // третий экран
+            let mainChatNavigation = UINavigationController()
+            mainChatNavigation.view.backgroundColor = .white
+            mainChatNavigation.tabBarItem = UITabBarItem(title: String.TabBar.third, image: UIImage.TabBar.third, selectedImage: nil)
+
+            tabVC.viewControllers = [mainNavigation, mainPaymentsNavigation, mainChatNavigation]
+
+            navigationController.setViewControllers([tabVC], animated: false)
+            navigationController.setNavigationBarHidden(true, animated: false)
         } else {
             let vc = createAuthentication(skipVisible: false)
             navigationController.pushViewControllerWithoutBackButtonTitle(vc, animated: true)
             clearPreviousFromNavigationStack()
-        }
-    }
-}
-
-extension AuthenticationCoordinator: PasscodeRouterDelegate {
-
-    func exitTapped() {
-        unauthorizedStoryHandler?()
-    }
-
-    func passcodeEnteredCorrectly() {
-        if showBiometricsConfiguration && !biometricsAuthSuccessful && applicationServices.biometricService.type != .none {
-            let vc = createAuthentication(skipVisible: true)
-            navigationController.viewControllers = [vc]
-        } else {
-            authorizedStoryHandler?()
-        }
-    }
-
-    func passcodeCreated() {
-        if applicationServices.biometricService.type == .none {
-            authorizedStoryHandler?()
-        } else {
-            authorizedState = true
-            let vc = createStartBiometrics()
-            navigationController.viewControllers = [vc]
         }
     }
 }
@@ -94,14 +91,14 @@ extension AuthenticationCoordinator: AuthenticationInfoRouterDelegate {
     }
 
     func startPasscodeEnter() {
-        if authorized {
-            let vc = createBiometrics()
-            navigationController.pushViewControllerWithoutBackButtonTitle(vc, animated: true)
-        } else {
-            let vc = PasscodeConfigurator.createModuleCreatePwdState(with: applicationServices, delegate: self)
-            navigationController.pushViewControllerWithoutBackButtonTitle(vc, animated: true)
-            clearPreviousFromNavigationStack()
-        }
+//        if authorized {
+//            let vc = createBiometrics()
+//            navigationController.pushViewControllerWithoutBackButtonTitle(vc, animated: true)
+//        } else {
+//            let vc = SMSInputConfigurator.createModule(with: applicationServices, routeDelegate: self)
+//            navigationController.pushViewControllerWithoutBackButtonTitle(vc, animated: true)
+//            clearPreviousFromNavigationStack()
+//        }
     }
 }
 

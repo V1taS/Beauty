@@ -16,9 +16,11 @@ final class RegistrationVC: UIViewController {
     // MARK: - Private variables
     private let stack = UIStackView()
     private let titleLabel = UILabel()
-    private let nameTextField = UITextField()
-    private let surnameTextField = UITextField()
-    // phoneNumberTextField
+    private let nameTextField = InputView()
+    private let surnameTextField = InputView()
+    private let phoneNumberField = InputView()
+    private let prefixNumberTFView = PrefixNumberTFView()
+
     private let continueButton = ButtonView()
     private let loginButton = ButtonView()
 
@@ -34,7 +36,7 @@ final class RegistrationVC: UIViewController {
     
     // MARK: - Private funcs
     private func configureLayout() {
-        [titleLabel, nameTextField, surnameTextField, continueButton, loginButton].forEach {
+        [titleLabel, nameTextField, surnameTextField, phoneNumberField, continueButton, loginButton].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             stack.addArrangedSubview($0)
         }
@@ -45,8 +47,9 @@ final class RegistrationVC: UIViewController {
         NSLayoutConstraint.activate([
             nameTextField.heightAnchor.constraint(equalToConstant: 46),
             surnameTextField.heightAnchor.constraint(equalToConstant: 46),
-            spacerNameTF.widthAnchor.constraint(equalToConstant: 16),
-            spacerSurnameTF.widthAnchor.constraint(equalToConstant: 16),
+            phoneNumberField.heightAnchor.constraint(equalToConstant: 46),
+            spacerNameTF.widthAnchor.constraint(equalToConstant: 24),
+            spacerSurnameTF.widthAnchor.constraint(equalToConstant: 24),
 
             stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
             stack.topAnchor.constraint(equalTo: view.topAnchor, constant: 33),
@@ -59,7 +62,7 @@ final class RegistrationVC: UIViewController {
         stack.axis = .vertical
         stack.spacing = 17
         stack.setCustomSpacing(49, after: titleLabel)
-        stack.setCustomSpacing(35, after: surnameTextField)
+        stack.setCustomSpacing(35, after: phoneNumberField)
 
         titleLabel.text = String.Registration.Labels.title
         titleLabel.textColor = UIColor.Registration.Labels.title
@@ -70,13 +73,17 @@ final class RegistrationVC: UIViewController {
         nameTextField.backgroundColor = UIColor.Registration.TextField.background
         nameTextField.layer.cornerRadius = 23
         nameTextField.leftView = spacerNameTF
-        nameTextField.leftViewMode = .always
 
         surnameTextField.placeholder = String.Registration.TextFields.surname
         surnameTextField.backgroundColor = UIColor.Registration.TextField.background
         surnameTextField.layer.cornerRadius = 23
         surnameTextField.leftView = spacerSurnameTF
-        surnameTextField.leftViewMode = .always
+
+        phoneNumberField.placeholder = String.Registration.TextFields.phone
+        phoneNumberField.backgroundColor = UIColor.Registration.TextField.background
+        phoneNumberField.layer.cornerRadius = 23
+        phoneNumberField.leftView = prefixNumberTFView
+        phoneNumberField.behavior = InputView.PhoneBehavoiur(mask: "(###) ###-##-##")
 
         continueButton.title = String.Registration.Button.continueButton
         continueButton.colorBg = UIColor.Registration.Button.continueButtonButtonBg

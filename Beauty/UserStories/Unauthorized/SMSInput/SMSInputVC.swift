@@ -16,7 +16,8 @@ final class SMSInputVC: UIViewController {
     // MARK: - Private variables
     private let stack = UIStackView()
     private let titleLabel = UILabel()
-    private let smsNumberField = UITextField()
+    private let smsNumberField = PasscodeInputView()
+    private let numberKeyboardView = NumberKeyboardView()
 
     private let continueButton = ButtonView()
     private let spacerphoneNumberTF = UIView()
@@ -28,7 +29,12 @@ final class SMSInputVC: UIViewController {
     }
 
     private func configureLayout() {
-        [titleLabel, smsNumberField, continueButton].forEach {
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(titleLabel)
+        smsNumberField.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(smsNumberField)
+
+        [numberKeyboardView, continueButton].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             stack.addArrangedSubview($0)
         }
@@ -40,9 +46,17 @@ final class SMSInputVC: UIViewController {
             smsNumberField.heightAnchor.constraint(equalToConstant: 46),
             spacerphoneNumberTF.widthAnchor.constraint(equalToConstant: 16),
 
+            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+            titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 33),
+            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
+
+            smsNumberField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            smsNumberField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 49),
+
+            stack.topAnchor.constraint(equalTo: smsNumberField.bottomAnchor, constant: 35),
             stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
-            stack.topAnchor.constraint(equalTo: view.topAnchor, constant: 33),
-            stack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25)
+            stack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
+            stack.bottomAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor)
         ])
     }
 
@@ -51,19 +65,26 @@ final class SMSInputVC: UIViewController {
 
         stack.axis = .vertical
         stack.spacing = 17
-        stack.setCustomSpacing(49, after: titleLabel)
-        stack.setCustomSpacing(35, after: smsNumberField)
 
         titleLabel.text = String.SMSInput.Labels.title
         titleLabel.textColor = UIColor.SMSInput.Labels.title
         titleLabel.font = UIFont.SMSInput.title
         titleLabel.textAlignment = .center
 
-        smsNumberField.placeholder = String.SMSInput.TextFields.phone
-        smsNumberField.backgroundColor = UIColor.SMSInput.TextField.background
-        smsNumberField.layer.cornerRadius = 23
-        smsNumberField.leftView = spacerphoneNumberTF
-        smsNumberField.leftViewMode = .always
+        numberKeyboardView.action = { [weak self] inputValue in
+            guard let self = self else { return }
+
+            if self.smsNumberField.passcode.count < 6 {
+                self.smsNumberField.passcode = self.smsNumberField.passcode + inputValue
+            }
+        }
+
+        numberKeyboardView.bottomRightButtonAction = { [weak self] in
+            guard let self = self else { return }
+            if !self.smsNumberField.passcode.isEmpty {
+                self.smsNumberField.passcode.removeLast()
+            }
+        }
 
         continueButton.title = String.Login.Button.continueButton
         continueButton.colorBg = UIColor.Login.Button.continueButtonButtonBg

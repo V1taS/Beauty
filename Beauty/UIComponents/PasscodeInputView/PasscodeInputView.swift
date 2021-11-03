@@ -10,29 +10,19 @@ import UIKit
 public final class PasscodeInputView: UIView {
 
     // MARK: - Public variables
-    public var topText = "" {
-        didSet {
-            topLabel.text = topText
-        }
-    }
-
-    public var bottomText = "" {
-        didSet {
-            bottomLabel.text = bottomText
-        }
-    }
-
     public var passcode = "" {
         didSet {
+            let passcodeCharacters = Array(passcode)
             let countOfCharacters = passcode.count - 1
             guard countOfCharacters <= dots.count - 1 else { return }
             for (index, view) in dots.enumerated() {
 
                 // FIXME: - настроить цвета
                 if index <= countOfCharacters {
-                    view.backgroundColor = .red
+                    view.backgroundColor = UIColor(hex: 0xC270E0)
+                    view.text = String(passcodeCharacters[index])
                 } else {
-                    view.backgroundColor = .gray
+                    view.backgroundColor = .white
                 }
             }
         }
@@ -45,12 +35,8 @@ public final class PasscodeInputView: UIView {
     }
 
     // MARK: - Private variables
-
-    private let stackView = UIStackView()
-    private let topLabel = UILabel()
     private let dotsHolder = UIStackView()
-    private var dots = [UIView]()
-    private let bottomLabel = UILabel()
+    private var dots = [UILabel]()
 
     // MARK: - Public funcs
     override init(frame: CGRect) {
@@ -63,17 +49,6 @@ public final class PasscodeInputView: UIView {
         super.init(coder: aDecoder)
         configureLayout()
         applyDefaultBehavior()
-    }
-
-    public override func layoutSubviews() {
-        super.layoutSubviews()
-        dots.forEach {
-            let heightValue = $0.frame.size.height == 0 ? Constants.defaultDotSize : $0.frame.size.height
-            $0.layer.cornerRadius = heightValue / 2
-
-            // FIXME: - изменить цвет
-            $0.backgroundColor = .blue
-        }
     }
 
     public func shake() {
@@ -92,32 +67,25 @@ public final class PasscodeInputView: UIView {
     }
 
     // MARK: - Private funcs
+
     // FIXME: - изменить цвет
     private func apply() {
-        topLabel.textColor = .black
-//        topLabel.font = design.topTextFont
-
-        dots.forEach {
-            $0.backgroundColor = .gray
-        }
+//        dots.forEach {
+//            $0.backgroundColor = UIColor(hex: 0xC270E0)
+//        }
     }
 
     private func configureLayout() {
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(stackView)
+        dotsHolder.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(dotsHolder)
 
         configureDots()
 
-        [topLabel, dotsHolder, bottomLabel].forEach {
-            $0.translatesAutoresizingMaskIntoConstraints = false
-            stackView.addArrangedSubview($0)
-        }
-
         let constraints = [
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            stackView.topAnchor.constraint(equalTo: topAnchor),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            dotsHolder.leadingAnchor.constraint(equalTo: leadingAnchor),
+            dotsHolder.topAnchor.constraint(equalTo: topAnchor),
+            dotsHolder.trailingAnchor.constraint(equalTo: trailingAnchor),
+            dotsHolder.bottomAnchor.constraint(equalTo: bottomAnchor)
         ]
         NSLayoutConstraint.activate(constraints)
     }
@@ -126,14 +94,25 @@ public final class PasscodeInputView: UIView {
         dotsHolder.arrangedSubviews.forEach { $0.removeFromSuperview() }
         dots = []
         (0..<numberOfDots).forEach { _ in
-            let view = UIView()
+            let view = UILabel()
             view.translatesAutoresizingMaskIntoConstraints = false
-            view.backgroundColor = .clear
+            view.backgroundColor = .white
+            view.layer.cornerRadius = 8
+            view.layer.borderWidth = 1
+            view.layer.borderColor = UIColor(hex: 0xC270E0).cgColor
+            view.clipsToBounds = true
+            view.textAlignment = .center
+            view.textColor = .white
+            view.font = UIFont.systemFont(ofSize: 24, weight: .bold)
 
-            NSLayoutConstraint.activate([
-                view.heightAnchor.constraint(equalToConstant: Constants.defaultDotSize),
-                view.widthAnchor.constraint(equalToConstant: Constants.defaultDotSize)
-            ])
+            let constraints = [
+                view.heightAnchor.constraint(equalToConstant: Constants.defaultDotSize.height),
+                view.widthAnchor.constraint(equalToConstant: Constants.defaultDotSize.width)
+            ]
+            constraints.forEach {
+                $0.priority = .defaultHigh
+            }
+            NSLayoutConstraint.activate(constraints)
             dotsHolder.addArrangedSubview(view)
             dots.append(view)
         }
@@ -141,17 +120,9 @@ public final class PasscodeInputView: UIView {
 
     private func applyDefaultBehavior() {
         configureDots()
-        stackView.axis = .vertical
-        stackView.distribution = .fillEqually
-        stackView.alignment = .center
         dotsHolder.alignment = .center
         dotsHolder.spacing = Constants.defaultDotsPadding
         dotsHolder.distribution = .equalSpacing
-        topLabel.applyInfoDesign()
-        topLabel.text = topText
-        bottomLabel.text = bottomText
-        topLabel.numberOfLines = .zero
-        bottomLabel.numberOfLines = .zero
     }
 }
 
@@ -165,17 +136,15 @@ extension PasscodeInputView: CAAnimationDelegate {
 
     public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         dots.forEach {
-            $0.backgroundColor = .green
+            $0.backgroundColor = UIColor(hex: 0xC270E0)
         }
     }
 }
 
 private enum Constants {
-    static let numberOfDots = 5
-
-    static let defaultDotSize: CGFloat = 12
-    static let defaultDotsPadding: CGFloat = 20
-
+    static let numberOfDots = 6
+    static var defaultDotSize: CGSize { CGSize(width: 40, height: 60) }
+    static let defaultDotsPadding: CGFloat = 16
     static let shakeAnimationKeyPath = "position"
 }
 

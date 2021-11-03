@@ -71,8 +71,6 @@ public final class KeyboardButtonView: UIView {
     // MARK: - Private funcs
     private func apply() {
         // FIXME: - добавить цвет и шрифт
-        label.textColor = .black
-        //        label.font = design.textFont
         backgroundDecorationView.deselectionColor = .black
         backgroundDecorationView.selectionColor = .white
 
@@ -117,6 +115,8 @@ public final class KeyboardButtonView: UIView {
         }
         label.textAlignment = .center
         label.numberOfLines = 1
+        label.textColor = .black
+        label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         imageView.image = image
         backgroundDecorationView.action = { [weak self] in
             guard let self = self else { return }
