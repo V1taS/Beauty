@@ -124,6 +124,17 @@
 		1BE1D19F2732F45500DE6D13 /* TextInputViewBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D19E2732F45500DE6D13 /* TextInputViewBehavior.swift */; };
 		1BE1D1A12732F64F00DE6D13 /* String+Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1A02732F64F00DE6D13 /* String+Mask.swift */; };
 		1BE1D1A6273300BC00DE6D13 /* PrefixNumberTFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1A4273300BC00DE6D13 /* PrefixNumberTFView.swift */; };
+		1BE1D1AC273331C600DE6D13 /* HeaderMainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1AA273331C600DE6D13 /* HeaderMainScreenView.swift */; };
+		1BE1D1AE27333E2400DE6D13 /* UIImage+Alpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1AD27333E2400DE6D13 /* UIImage+Alpha.swift */; };
+		1BE1D1B3273340F600DE6D13 /* InvitationPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1B1273340F600DE6D13 /* InvitationPanelView.swift */; };
+		1BE1D1BB2733475D00DE6D13 /* DefaultSupportRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1B52733475D00DE6D13 /* DefaultSupportRouter.swift */; };
+		1BE1D1BC2733475D00DE6D13 /* DefaultSupportInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1B62733475D00DE6D13 /* DefaultSupportInteractor.swift */; };
+		1BE1D1BD2733475D00DE6D13 /* SupportProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1B72733475D00DE6D13 /* SupportProtocols.swift */; };
+		1BE1D1BE2733475D00DE6D13 /* SupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1B82733475D00DE6D13 /* SupportVC.swift */; };
+		1BE1D1BF2733475D00DE6D13 /* SupportConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1B92733475D00DE6D13 /* SupportConfigurator.swift */; };
+		1BE1D1C02733475D00DE6D13 /* DefaultSupportPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1BA2733475D00DE6D13 /* DefaultSupportPresenter.swift */; };
+		1BE1D1C2273348E800DE6D13 /* SupportCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1C1273348E800DE6D13 /* SupportCoordinator.swift */; };
+		1BE1D1C727334EF500DE6D13 /* ImageWithLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1D1C527334EF500DE6D13 /* ImageWithLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -246,6 +257,17 @@
 		1BE1D19E2732F45500DE6D13 /* TextInputViewBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputViewBehavior.swift; sourceTree = "<group>"; };
 		1BE1D1A02732F64F00DE6D13 /* String+Mask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Mask.swift"; sourceTree = "<group>"; };
 		1BE1D1A4273300BC00DE6D13 /* PrefixNumberTFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixNumberTFView.swift; sourceTree = "<group>"; };
+		1BE1D1AA273331C600DE6D13 /* HeaderMainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderMainScreenView.swift; sourceTree = "<group>"; };
+		1BE1D1AD27333E2400DE6D13 /* UIImage+Alpha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Alpha.swift"; sourceTree = "<group>"; };
+		1BE1D1B1273340F600DE6D13 /* InvitationPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationPanelView.swift; sourceTree = "<group>"; };
+		1BE1D1B52733475D00DE6D13 /* DefaultSupportRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSupportRouter.swift; sourceTree = "<group>"; };
+		1BE1D1B62733475D00DE6D13 /* DefaultSupportInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSupportInteractor.swift; sourceTree = "<group>"; };
+		1BE1D1B72733475D00DE6D13 /* SupportProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportProtocols.swift; sourceTree = "<group>"; };
+		1BE1D1B82733475D00DE6D13 /* SupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVC.swift; sourceTree = "<group>"; };
+		1BE1D1B92733475D00DE6D13 /* SupportConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportConfigurator.swift; sourceTree = "<group>"; };
+		1BE1D1BA2733475D00DE6D13 /* DefaultSupportPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSupportPresenter.swift; sourceTree = "<group>"; };
+		1BE1D1C1273348E800DE6D13 /* SupportCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportCoordinator.swift; sourceTree = "<group>"; };
+		1BE1D1C527334EF500DE6D13 /* ImageWithLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +331,7 @@
 				1BAF992F2731D12000A5DFCB /* UIColor+Hex.swift */,
 				1BAF99312731D5F300A5DFCB /* UIView+Shadow.swift */,
 				1BE1D1A02732F64F00DE6D13 /* String+Mask.swift */,
+				1BE1D1AD27333E2400DE6D13 /* UIImage+Alpha.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -337,6 +360,7 @@
 		1BB43B43272EB8F100D86B50 /* Authorized */ = {
 			isa = PBXGroup;
 			children = (
+				1BE1D1B42733474C00DE6D13 /* Support */,
 				1BC80077272CB7C1006CBBD5 /* Main */,
 			);
 			path = Authorized;
@@ -574,6 +598,9 @@
 		1BC80048272CB43C006CBBD5 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				1BE1D1C327334ED200DE6D13 /* ImageWithLabelView */,
+				1BE1D1AF273340B600DE6D13 /* InvitationPanelView */,
+				1BE1D1A8273331A200DE6D13 /* HeaderMainScreenView */,
 				1BE1D1A22733007A00DE6D13 /* PrefixNumberTFView */,
 				1BE1D1972732F2C200DE6D13 /* InputView */,
 				1B2AC571273093550091EB19 /* ButtonVIEW */,
@@ -733,6 +760,7 @@
 			children = (
 				1BC80075272CB7A1006CBBD5 /* MainCoordinator.swift */,
 				1BC8008C272CBB0B006CBBD5 /* AuthenticatedCoordinator.swift */,
+				1BE1D1C1273348E800DE6D13 /* SupportCoordinator.swift */,
 			);
 			path = AuthorizedNavigation;
 			sourceTree = "<group>";
@@ -774,6 +802,43 @@
 				1BE1D1A4273300BC00DE6D13 /* PrefixNumberTFView.swift */,
 			);
 			path = PrefixNumberTFView;
+			sourceTree = "<group>";
+		};
+		1BE1D1A8273331A200DE6D13 /* HeaderMainScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				1BE1D1AA273331C600DE6D13 /* HeaderMainScreenView.swift */,
+			);
+			path = HeaderMainScreenView;
+			sourceTree = "<group>";
+		};
+		1BE1D1AF273340B600DE6D13 /* InvitationPanelView */ = {
+			isa = PBXGroup;
+			children = (
+				1BE1D1B1273340F600DE6D13 /* InvitationPanelView.swift */,
+			);
+			path = InvitationPanelView;
+			sourceTree = "<group>";
+		};
+		1BE1D1B42733474C00DE6D13 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1BE1D1B52733475D00DE6D13 /* DefaultSupportRouter.swift */,
+				1BE1D1B62733475D00DE6D13 /* DefaultSupportInteractor.swift */,
+				1BE1D1B72733475D00DE6D13 /* SupportProtocols.swift */,
+				1BE1D1B82733475D00DE6D13 /* SupportVC.swift */,
+				1BE1D1B92733475D00DE6D13 /* SupportConfigurator.swift */,
+				1BE1D1BA2733475D00DE6D13 /* DefaultSupportPresenter.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		1BE1D1C327334ED200DE6D13 /* ImageWithLabelView */ = {
+			isa = PBXGroup;
+			children = (
+				1BE1D1C527334EF500DE6D13 /* ImageWithLabelView.swift */,
+			);
+			path = ImageWithLabelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -852,12 +917,14 @@
 				1BB43B52272EBBAE00D86B50 /* BiometricAuthErrors.swift in Sources */,
 				1BB43BD4272EFFDF00D86B50 /* LoginProtocols.swift in Sources */,
 				1BB43B4D272EBA9000D86B50 /* AuthenticationInfoRouterDelegate.swift in Sources */,
+				1BE1D1C02733475D00DE6D13 /* DefaultSupportPresenter.swift in Sources */,
 				1BC80062272CB5F8006CBBD5 /* ReusableComponent.swift in Sources */,
 				1BB43BB4272EEE6C00D86B50 /* OnBoardingConfigurator.swift in Sources */,
 				1BE1D19B2732F2ED00DE6D13 /* InputView.swift in Sources */,
 				1BC80074272CB781006CBBD5 /* RootApplicationCoordinator.swift in Sources */,
 				1BB43BA2272ED01300D86B50 /* LoadingIndicatorView.swift in Sources */,
 				1BC8006B272CB6B7006CBBD5 /* PermissionServiceImpl.swift in Sources */,
+				1BE1D1C727334EF500DE6D13 /* ImageWithLabelView.swift in Sources */,
 				1BC80085272CB7FE006CBBD5 /* MainConfigurator.swift in Sources */,
 				1BC80081272CB7FE006CBBD5 /* DefaultMainRouter.swift in Sources */,
 				1BB43B8C272EC6E200D86B50 /* NumberButtonsGroupView.swift in Sources */,
@@ -899,6 +966,7 @@
 				1BC8008D272CBB0B006CBBD5 /* AuthenticatedCoordinator.swift in Sources */,
 				1B2AC56A27307DAD0091EB19 /* DimmingImageView.swift in Sources */,
 				1BB43BB0272EEE6C00D86B50 /* DefaultOnBoardingRouter.swift in Sources */,
+				1BE1D1B3273340F600DE6D13 /* InvitationPanelView.swift in Sources */,
 				1BB43C04272F28E600D86B50 /* DefaultHomeScreenRouter.swift in Sources */,
 				1BB43BA6272ED18A00D86B50 /* String+AES.swift in Sources */,
 				1BB43B40272EB78A00D86B50 /* AuthorizedState.swift in Sources */,
@@ -907,6 +975,7 @@
 				1BB43C15272F30FF00D86B50 /* DefaultRegistrationRouter.swift in Sources */,
 				1BB43B61272EBE0700D86B50 /* KeychainOptions.swift in Sources */,
 				1BB43BB7272EF25400D86B50 /* OnBoardingCoordinator.swift in Sources */,
+				1BE1D1BD2733475D00DE6D13 /* SupportProtocols.swift in Sources */,
 				1BB43C16272F30FF00D86B50 /* DefaultRegistrationInteractor.swift in Sources */,
 				1BB43B93272EC7AB00D86B50 /* UIImage+Extensions.swift in Sources */,
 				1BB43B6B272EBFF200D86B50 /* UIView+SafeAreaLayout.swift in Sources */,
@@ -926,11 +995,15 @@
 				1BB43B4B272EBA6400D86B50 /* AuthenticationInfoConfigurator.swift in Sources */,
 				1BC80035272CAE8A006CBBD5 /* AppDelegate.swift in Sources */,
 				1BB43C0B272F293700D86B50 /* HomeScreenCoordinator.swift in Sources */,
+				1BE1D1BF2733475D00DE6D13 /* SupportConfigurator.swift in Sources */,
 				1BB43C08272F28E600D86B50 /* HomeScreenConfigurator.swift in Sources */,
 				1B2AC575273093680091EB19 /* ButtonView.swift in Sources */,
+				1BE1D1AE27333E2400DE6D13 /* UIImage+Alpha.swift in Sources */,
 				1BB43BD5272EFFDF00D86B50 /* LoginVC.swift in Sources */,
 				1BB43C06272F28E600D86B50 /* HomeScreenProtocols.swift in Sources */,
+				1BE1D1BC2733475D00DE6D13 /* DefaultSupportInteractor.swift in Sources */,
 				1BC8005E272CB5F8006CBBD5 /* CollectionViewController.swift in Sources */,
+				1BE1D1BB2733475D00DE6D13 /* DefaultSupportRouter.swift in Sources */,
 				1BC8008F272CBB2F006CBBD5 /* UnauthorizedCoordinator.swift in Sources */,
 				1BB43B72272EC0D200D86B50 /* StartBiometricsVC.swift in Sources */,
 				1BB43BB3272EEE6C00D86B50 /* OnBoardingVC.swift in Sources */,
@@ -943,13 +1016,16 @@
 				1BC80063272CB5F8006CBBD5 /* ReusableView.swift in Sources */,
 				1BB43C05272F28E600D86B50 /* DefaultHomeScreenInteractor.swift in Sources */,
 				1BC8004F272CB5A1006CBBD5 /* GlobalConstants.swift in Sources */,
+				1BE1D1AC273331C600DE6D13 /* HeaderMainScreenView.swift in Sources */,
 				1BB43C07272F28E600D86B50 /* HomeScreenVC.swift in Sources */,
 				1BB43B56272EBC1700D86B50 /* BiometricAuthService.swift in Sources */,
 				1BC8005F272CB5F8006CBBD5 /* UICollectionView+Reusable.swift in Sources */,
 				1BB43B4F272EBAA400D86B50 /* AuthenticationInfoVC.swift in Sources */,
+				1BE1D1C2273348E800DE6D13 /* SupportCoordinator.swift in Sources */,
 				1BB43B89272EC6B400D86B50 /* NumberKeyboardView.swift in Sources */,
 				1BC80037272CAE8A006CBBD5 /* SceneDelegate.swift in Sources */,
 				1BB43C0D272F30B200D86B50 /* RegistrationCoordinator.swift in Sources */,
+				1BE1D1BE2733475D00DE6D13 /* SupportVC.swift in Sources */,
 				1BB43BB5272EEE6C00D86B50 /* DefaultOnBoardingPresenter.swift in Sources */,
 				1BC80060272CB5F8006CBBD5 /* GenericCollectionViewCell.swift in Sources */,
 				1BB43C19272F30FF00D86B50 /* RegistrationConfigurator.swift in Sources */,

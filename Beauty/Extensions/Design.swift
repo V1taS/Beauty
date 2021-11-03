@@ -81,7 +81,7 @@ extension UIColor {
         enum Button {
             static var close: UIColor { UIColor.white }
             static var nextTitle: UIColor { UIColor.white }
-            static var nextBg: UIColor { UIColor.purple }
+            static var nextBg: UIColor { UIColor(hex: 0xC270E0) }
         }
     }
 }
@@ -312,5 +312,51 @@ extension String {
 extension UIFont {
     enum SMSInput {
         static var title: UIFont { UIFont.systemFont(ofSize: 24, weight: .bold) }
+    }
+}
+
+// MARK: - Main screen
+extension UIImage {
+    enum MainScreen {
+        enum Background {
+            static var image: UIImage { UIImage(named: "headerMainScreenBG")! }
+        }
+
+        enum Button {
+            static var exit: UIImage { UIImage(named: "headerMainScreenExit")! }
+        }
+    }
+}
+
+extension String {
+    enum MainScreen {
+        enum Labels {
+            static var name: String { "Светлана Рублева" }
+            static var scores: String { "272 ₽" }
+            static var description: String { "Баллы можно потратить на услуги салона." }
+            static var descriptionTwo: String { "Тут будет вся информация о реферальной программе, о том, что при установке приложения доется 100 рублей и т д и т п" }
+        }
+    }
+}
+
+extension UIColor {
+    enum MainScreen {
+        enum Labels {
+            static var name: UIColor { UIColor.white }
+            static var scores: UIColor { UIColor.white }
+            static var description: UIColor { UIColor.white }
+        }
+
+        enum Background {
+            static var color: UIColor { UIColor(hex: 0xF1F1FA) }
+        }
+    }
+}
+
+extension UIFont {
+    enum MainScreen {
+        static var name: UIFont { UIFont.systemFont(ofSize: 16, weight: .regular) }
+        static var scores: UIFont { UIFont.systemFont(ofSize: 40, weight: .semibold) }
+        static var description: UIFont { UIFont.systemFont(ofSize: 14, weight: .regular) }
     }
 }

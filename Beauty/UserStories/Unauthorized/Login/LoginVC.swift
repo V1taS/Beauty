@@ -23,12 +23,14 @@ final class LoginVC: UIViewController {
 
     private let prefixNumberTFView = PrefixNumberTFView()
 
+    // MARK: - Initialization
     override func viewDidLoad() {
         super.viewDidLoad()
         configureLayout()
         applyDefaultBehavior()
     }
 
+    // MARK: - Private func
     private func configureLayout() {
         [titleLabel, phoneNumberField, continueButton, registrationButton].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false

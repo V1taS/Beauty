@@ -22,6 +22,7 @@ final class SMSInputVC: UIViewController {
     private let continueButton = ButtonView()
     private let spacerphoneNumberTF = UIView()
 
+    // MARK: - Initialization
     override func viewDidLoad() {
         super.viewDidLoad()
         configureLayout()

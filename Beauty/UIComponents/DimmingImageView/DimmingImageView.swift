@@ -64,7 +64,7 @@ public final class DimmingImageView: UIView {
         apply()
     }
 
-    func configureGradientLayer(){
+    private func configureGradientLayer(){
         backgroundColor = .clear
         let startColor = UIColor.black.withAlphaComponent(0.2)
         let endColor = UIColor.black.withAlphaComponent(0.5)
