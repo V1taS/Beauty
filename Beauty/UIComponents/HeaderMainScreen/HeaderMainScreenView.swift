@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class HeaderMainScreenView: UIView {
+public final class HeaderMainScreenView: UIView, GenericCellSubview {
 
     // MARK: - Public variables
     public var name: String? {
@@ -19,7 +19,7 @@ public final class HeaderMainScreenView: UIView {
 
     public var scores: String? {
         didSet {
-            nameLabel.text = scores
+            scoresLabel.text = scores
         }
     }
 
@@ -29,8 +29,10 @@ public final class HeaderMainScreenView: UIView {
         }
     }
 
+    public var exitButtonAction: (() -> Void)?
+
     public override var intrinsicContentSize: CGSize {
-        CGSize(width: UIView.noIntrinsicMetric, height: 240)
+        CGSize(width: UIView.noIntrinsicMetric, height: 220)
     }
 
     // MARK: - Private variables
@@ -40,6 +42,8 @@ public final class HeaderMainScreenView: UIView {
     private let scoresLabel = UILabel()
     private let descriptionLabel = UILabel()
     private let stack = UIStackView()
+    private let horizontalStack = UIStackView()
+    private let spacing = UIView()
 
     // MARK: - Public funcs
     override init(frame: CGRect) {
@@ -59,7 +63,12 @@ public final class HeaderMainScreenView: UIView {
     }
 
     private func configureLayout() {
-        [exitButton, nameLabel, scoresLabel, descriptionLabel].forEach {
+        [nameLabel, spacing, exitButton].forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            horizontalStack.addArrangedSubview($0)
+        }
+
+        [horizontalStack, scoresLabel, descriptionLabel].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             stack.addArrangedSubview($0)
         }
@@ -69,7 +78,7 @@ public final class HeaderMainScreenView: UIView {
             addSubview($0)
         }
 
-        NSLayoutConstraint.activate([
+        let constraint = [
             exitButton.widthAnchor.constraint(equalToConstant: 40),
             exitButton.heightAnchor.constraint(equalToConstant: 40),
 
@@ -79,11 +88,15 @@ public final class HeaderMainScreenView: UIView {
             backgroundImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
 
             stack.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 26),
-            stack.topAnchor.constraint(equalTo: topAnchor, constant: 52),
+            stack.topAnchor.constraint(equalTo: topAnchor, constant: 75),
             stack.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -26),
-            stack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -28),
-        ])
-        
+            stack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -28)
+        ]
+
+        constraint.forEach {
+            $0.priority = .defaultHigh
+        }
+        NSLayoutConstraint.activate(constraint)
     }
 
     private func applyDefaultBehavior() {
@@ -111,8 +124,17 @@ public final class HeaderMainScreenView: UIView {
         stack.setCustomSpacing(22, after: exitButton)
         stack.setCustomSpacing(1, after: nameLabel)
         stack.setCustomSpacing(1, after: scoresLabel)
-        stack.alignment = .leading
+
+        horizontalStack.axis = .horizontal
+        horizontalStack.backgroundColor = .clear
+
+        exitButton.addTarget(self, action: #selector(exitButtonTap), for: .touchUpInside)
         apply()
+    }
+
+    @objc
+    private func exitButtonTap() {
+        exitButtonAction?()
     }
 }
 

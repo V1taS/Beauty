@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class ButtonView: UIView {
+public final class ButtonView: UIView, GenericCellSubview {
 
     // MARK: - Public variables
     public var colorBg: UIColor? {

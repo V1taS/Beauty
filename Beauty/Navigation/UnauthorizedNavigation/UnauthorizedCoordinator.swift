@@ -46,6 +46,7 @@ final class UnauthorizedCoordinator {
 
     private func createOnBoardingCoordinator() {
         let coordinator = OnBoardingCoordinator(services: applicationServices, navigationController: navigationController)
+        coordinator.authorizedStoryHandler = authorizedStoryHandler
         onBoardingCoordinator = coordinator
         onBoardingCoordinator?.start()
     }

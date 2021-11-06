@@ -8,7 +8,7 @@
 import UIKit
 
 final class AuthenticatedCoordinator {
-    var authorizedStoryHandler: (() -> Void)?
+
     var unauthorizedStoryHandler: (() -> Void)?
 
     private let navigationController: UINavigationController

@@ -19,14 +19,6 @@ final class SMSInputCoordinator {
         self.services = services
         self.navigationController = navigationController
     }
-
-    private func startPasscodeCoordinator(with navigationController: UINavigationController) {
-        let passcodeCoordinator = AuthenticatedCoordinator(services: services, navigationController: navigationController)
-        // FIXME: - Посмотреть что можно сделать с unauthorizedStoryHandler
-        passcodeCoordinator.unauthorizedStoryHandler = authorizedStoryHandler
-        self.authenticatedCoordinator = passcodeCoordinator
-        self.authenticatedCoordinator?.start()
-    }
 }
 
 extension SMSInputCoordinator: Coordinator {
@@ -41,6 +33,6 @@ extension SMSInputCoordinator: Coordinator {
 extension SMSInputCoordinator: SMSInputModuleDelegate {
     func showMainScreen() {
         self.navigationController.dismiss(animated: true)
-        startPasscodeCoordinator(with: navigationController)
+        authorizedStoryHandler?()
     }
 }

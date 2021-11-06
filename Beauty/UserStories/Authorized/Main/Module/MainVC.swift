@@ -8,63 +8,115 @@
 
 import UIKit
 
-final class MainVC: UIViewController {
-
+final class MainVC: CollectionViewController<CollectionViewHolder> {
+    
     // MARK: - Internal variables
     var interactor: MainInteractor?
-
+    
     // MARK: - Private variables
-    private let headerMainScreenView = HeaderMainScreenView()
-    private let stack = UIStackView()
-    private let invitationPanelView = InvitationPanelView()
-    private let descriptionLabel = UILabel()
-
+    private let headerDataSource = MainHeaderDataSource()
+    private let buttonAdminDataSource = MainButtonAdminDataSource()
+    private let inviteDashBoardDataSource = MainInviteDashBoardDataSource()
+    private let bannerViewDataSource = MainBannerViewDataSource()
+    
     // MARK: - Initialization
+    init() {
+        super.init(container: CollectionViewContainer(
+            dataSources: [
+                headerDataSource,
+                buttonAdminDataSource,
+                inviteDashBoardDataSource,
+                bannerViewDataSource,
+                bannerViewDataSource,
+                bannerViewDataSource,
+                bannerViewDataSource
+            ]
+        ))
+    }
+    
+    required init?(coder _: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override func loadView() {
+        super.loadView()
+        view = CollectionViewHolder()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureLayout()
         applyDefaultBehavior()
     }
 
     // MARK: - Private func
-    private func configureLayout() {
-        [invitationPanelView, descriptionLabel].forEach {
-            $0.translatesAutoresizingMaskIntoConstraints = false
-            stack.addArrangedSubview($0)
-        }
-
-        [headerMainScreenView, stack].forEach {
-            $0.translatesAutoresizingMaskIntoConstraints = false
-            view.addSubview($0)
-        }
-        NSLayoutConstraint.activate([
-            headerMainScreenView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            headerMainScreenView.topAnchor.constraint(equalTo: view.topAnchor),
-            headerMainScreenView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-
-            stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            stack.topAnchor.constraint(equalTo: headerMainScreenView.bottomAnchor, constant: 16),
-            stack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            stack.bottomAnchor.constraint(lessThanOrEqualTo: view.compatableSafeAreaLayoutGuide.bottomAnchor),
-        ])
+    private func applyDefaultBehavior() {
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        view.backgroundColor = UIColor.MainScreen.Background.color
+        interactor?.loadedView()
     }
 
-    private func applyDefaultBehavior() {
-        view.backgroundColor = UIColor.MainScreen.Background.color
-        stack.backgroundColor = .clear
-        stack.axis = .vertical
-        stack.setCustomSpacing(18, after: invitationPanelView)
+    private func configureHeader(_ mainViewModel: MainHeaderViewModel?) {
+        guard let viewModel = mainViewModel else { return }
+        headerDataSource.name = viewModel.name
+        headerDataSource.scores = viewModel.scores
+        headerDataSource.description = viewModel.description
+        headerDataSource.actionExitButton = { [weak self] in
+            guard let self = self else { return }
+            self.interactor?.exitApp()
+        }
+    }
 
-        descriptionLabel.text = String.MainScreen.Labels.descriptionTwo
-        descriptionLabel.textColor = UIColor(hex: 0x243656)
-        descriptionLabel.font = UIFont.systemFont(ofSize: 12, weight: .regular)
-        descriptionLabel.numberOfLines = .zero
+    private func configureButtonAdmin(_ mainViewModel: MainButtonAdminViewModel?) {
+        guard let viewModel = mainViewModel else { return }
+        buttonAdminDataSource.colorBg = viewModel.colorBg
+        buttonAdminDataSource.colorTitle = viewModel.colorTitle
+        buttonAdminDataSource.borderColor = viewModel.borderColor
+        buttonAdminDataSource.title = viewModel.title
+        buttonAdminDataSource.actionButton = { [weak self] in
+            guard let self = self else { return }
+            self.interactor?.presentAdmin()
+        }
+    }
 
-        interactor?.loadedView()
+    private func configureInviteDashBoard(_ mainViewModel: MainInviteDashBoardViewModel?) {
+        guard let viewModel = mainViewModel else { return }
+        inviteDashBoardDataSource.titleText = viewModel.title
+        inviteDashBoardDataSource.descriptionText = viewModel.description
+        inviteDashBoardDataSource.titleProgressBarText = viewModel.titleProgressBar
+        inviteDashBoardDataSource.progressBarValue = viewModel.progressBarValue
+        inviteDashBoardDataSource.shareButtonAction = { [weak self] in
+            guard let self = self else { return }
+            self.interactor?.shareApp()
+        }
+    }
+
+    private func configureBanner(_ mainViewModel: MainBannerViewModel?) {
+        guard let viewModel = mainViewModel else { return }
+        bannerViewDataSource.titleText = viewModel.title
+        bannerViewDataSource.descriptionText = viewModel.description
+    }
+
+    private func updateDataSource() {
+        container.reload(shouldReloadCollection: true)
     }
 }
 
 extension MainVC: MainView {
+    func updateBanner(_ viewModel: MainBannerViewModel?) {
+        configureBanner(viewModel)
+    }
+
+    func updateInviteDashBoard(_ viewModel: MainInviteDashBoardViewModel?) {
+        configureInviteDashBoard(viewModel)
+    }
+
+    func updateHeader(_ viewModel: MainHeaderViewModel?) {
+        configureHeader(viewModel)
+    }
+
+    func updateButtonAdmin(_ viewModel: MainButtonAdminViewModel?) {
+        configureButtonAdmin(viewModel)
+    }
 }
 
 private enum Constants {

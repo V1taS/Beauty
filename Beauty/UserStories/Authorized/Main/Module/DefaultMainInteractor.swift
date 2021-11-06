@@ -22,6 +22,22 @@ final class DefaultMainInteractor {
 }
 
 extension DefaultMainInteractor: MainInteractor {
+    func presentAdmin() {
+        router.presentAdmin()
+    }
+
+    func shareApp() {
+        router.shareApp()
+    }
+
+    func exitApp() {
+        router.exitApp()
+    }
+
     func loadedView() {
+        presenter.handleHeader(nil)
+        presenter.handleButtonAdmin(nil)
+        presenter.handleInviteDashBoard(nil)
+        presenter.handleBanner(nil)
     }
 }

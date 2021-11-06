@@ -13,7 +13,6 @@ public final class RootApplicationCoordinator {
     private let applicationServices: ApplicationServices
     private let window: UIWindow?
 
-    private var mainCleanerCoordinator: Coordinator?
     private var unauthorizedCoordinator: Coordinator?
     private var authenticatedCoordinator: AuthenticatedCoordinator?
     private var passcodeCoordinator: Coordinator?

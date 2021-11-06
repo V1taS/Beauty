@@ -53,6 +53,7 @@ class CollectionViewController<ViewType: CollectionViewHolderProtocol>: UIViewCo
 		rootView.collectionView.dataSource = self
 		rootView.collectionView.delegate = self
 		rootView.collectionView.backgroundColor = UIColor.clear
+        rootView.collectionView.contentInsetAdjustmentBehavior = .never
 		guard rootView.collectionView.collectionViewLayout is UICollectionViewFlowLayout else {
 			assertionFailure("Wrong layout")
 			return
